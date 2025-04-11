@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=3 uid="uid://b4m4gefrlhjsd"]
+
+[ext_resource type="Script" path="res://buildings/Castle.gd" id="1_2ligi"]
+[ext_resource type="Texture2D" uid="uid://cuvcfp30a7gf8" path="res://buildings/main.png" id="2_urjdr"]
+[ext_resource type="Script" path="res://Areas/MainArea2D.gd" id="3_0mbuw"]
+[ext_resource type="PackedScene" uid="uid://bydkjmor6dd4g" path="res://select.tscn" id="4_wepsp"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_l11f8"]
+size = Vector2(300, 300)
+orientation = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n4erb"]
+size = Vector2(290, 300)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bbdtw"]
+size = Vector2(300, 300)
+
+[node name="MeshInstance2D" type="MeshInstance2D" groups=["building"]]
+position = Vector2(0, -75)
+rotation = 3.14159
+mesh = SubResource("PlaneMesh_l11f8")
+texture = ExtResource("2_urjdr")
+script = ExtResource("1_2ligi")
+
+[node name="Castle" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Castle"]
+shape = SubResource("RectangleShape2D_n4erb")
+disabled = true
+
+[node name="MainArea2D" type="Area2D" parent="Castle" groups=["building"]]
+script = ExtResource("3_0mbuw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Castle/MainArea2D"]
+shape = SubResource("RectangleShape2D_bbdtw")
+
+[node name="Select" parent="Castle" instance=ExtResource("4_wepsp")]
+
+[connection signal="area_entered" from="Castle/MainArea2D" to="Castle/MainArea2D" method="_on_area_entered"]

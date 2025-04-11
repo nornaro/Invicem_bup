@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=3 uid="uid://c0rwbvwtqs065"]
+
+[ext_resource type="Script" path="res://buildings/turret.gd" id="1_k4ybg"]
+[ext_resource type="Texture2D" uid="uid://jxb73txwyc2f" path="res://buildings/cannon.png" id="1_kj6hn"]
+[ext_resource type="Script" path="res://Areas/Area2D.gd" id="2_s3esh"]
+[ext_resource type="PackedScene" uid="uid://bydkjmor6dd4g" path="res://select.tscn" id="4_hwu8p"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2dbdr"]
+size = Vector2(50, 50)
+orientation = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xg3sn"]
+size = Vector2(40, 40)
+
+[node name="Turret" type="MeshInstance2D"]
+rotation = 3.14159
+mesh = SubResource("PlaneMesh_2dbdr")
+texture = ExtResource("1_kj6hn")
+script = ExtResource("1_k4ybg")
+
+[node name="Area2D" type="Area2D" parent="." groups=["building"]]
+script = ExtResource("2_s3esh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_xg3sn")
+
+[node name="Select" parent="." instance=ExtResource("4_hwu8p")]
+
+[connection signal="area_entered" from="Area2D" to="Area2D" method="_on_area_entered"]
+[connection signal="area_exited" from="Area2D" to="Area2D" method="_on_area_exited"]

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://s1qkkv1335ot"]
+
+[ext_resource type="Texture2D" uid="uid://c7vjg7ty0wkew" path="res://Village_mt.png" id="4_jbs4e"]
+[ext_resource type="PackedScene" uid="uid://crjxo46q7x2o7" path="res://addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_church_blue.gltf" id="10_d2ott"]
+
+[sub_resource type="Environment" id="Environment_7il5g"]
+
+[node name="Village" type="Sprite3D"]
+texture = ExtResource("4_jbs4e")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0.281121, -0.835168, -0.472721, 0.413486, -0.339108, 0.845006, 0, 0, 4.59888)
+shadow_enabled = true
+
+[node name="Main" type="Area2D" parent="."]
+scale = Vector2(1.1, 1.1)
+
+[node name="Area" type="CollisionPolygon2D" parent="Main"]
+polygon = PackedVector2Array(-95.4545, 115.455, -95.4545, 115.455, 138.182, -7.27273, 0.909091, -132.727, -77.2727, -79.0909, -214.545, 42.7273, -203.636, 71.8182, -113.636, 117.273)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+current = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_7il5g")
+
+[node name="building_church_blue2" parent="." instance=ExtResource("10_d2ott")]
+transform = Transform3D(1, 0, 0, 0, 0.642788, -0.766044, 0, 0.766044, 0.642788, -2.78589, 1.09657, 59.822)

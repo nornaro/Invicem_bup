@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://craftpix/PNG/road/road_16.png" id="1_4g5fw"]
+
+[node name="Road16" type="Sprite2D"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_4g5fw")

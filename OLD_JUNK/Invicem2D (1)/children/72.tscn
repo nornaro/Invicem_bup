@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Texture2D" path="res://craftpix/3 Animated Objects/1 Flag/4.png" id="1_e66x3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hrgg3"]
+atlas = ExtResource("1_e66x3")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kss04"]
+atlas = ExtResource("1_e66x3")
+region = Rect2(32, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ql0cc"]
+atlas = ExtResource("1_e66x3")
+region = Rect2(64, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5dck0"]
+atlas = ExtResource("1_e66x3")
+region = Rect2(96, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kwi8i"]
+atlas = ExtResource("1_e66x3")
+region = Rect2(128, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3f1rd"]
+atlas = ExtResource("1_e66x3")
+region = Rect2(160, 0, 32, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bddxu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hrgg3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kss04")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ql0cc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5dck0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kwi8i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3f1rd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="72" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_bddxu")

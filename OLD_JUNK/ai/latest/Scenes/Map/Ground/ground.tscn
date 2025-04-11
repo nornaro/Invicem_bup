@@ -1,0 +1,201 @@
+[gd_scene load_steps=23 format=3 uid="uid://cbm6uy5irqlad"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k46gt"]
+size = Vector2(1650, 965)
+
+[sub_resource type="Resource" id="Resource_cgkeb"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/Road.jpg"
+
+[sub_resource type="Resource" id="Resource_qgas0"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/Road.jpg"
+
+[sub_resource type="Resource" id="Resource_i4i2e"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/Road.jpg"
+
+[sub_resource type="Resource" id="Resource_sbxar"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/Road.jpg"
+
+[sub_resource type="Resource" id="Resource_3send"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/Road.jpg"
+
+[sub_resource type="Resource" id="Resource_ylsne"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/Road.jpg"
+
+[sub_resource type="Resource" id="Resource_6dw58"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/Road.jpg"
+
+[sub_resource type="Resource" id="Resource_dflmk"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/Road.jpg"
+
+[sub_resource type="Resource" id="Resource_tidba"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/Road.jpg"
+
+[sub_resource type="Resource" id="Resource_8kv4k"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/Road.jpg"
+
+[sub_resource type="Resource" id="Resource_5t8x6"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/Road.jpg"
+
+[sub_resource type="Resource" id="Resource_w0cn8"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/Road.jpg"
+
+[sub_resource type="Resource" id="Resource_mtm05"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/Road.jpg"
+
+[sub_resource type="Resource" id="Resource_rr31w"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/Road.jpg"
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_j5cvp"]
+size = Vector2(1000, 400)
+subdivide_width = 10
+subdivide_depth = 10
+orientation = 2
+
+[sub_resource type="Resource" id="Resource_a8e85"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/openart-image_b5DSGxA0_1735698634067_raw.jpg"
+
+[sub_resource type="Resource" id="Resource_myv7v"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/openart-image_b5DSGxA0_1735698634067_raw.jpg"
+
+[sub_resource type="Resource" id="Resource_kemdr"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/openart-image_b5DSGxA0_1735698634067_raw.jpg"
+
+[sub_resource type="Resource" id="Resource_ux3ib"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/openart-image_b5DSGxA0_1735698634067_raw.jpg"
+
+[sub_resource type="Resource" id="Resource_nl074"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/openart-image_b5DSGxA0_1735698634067_raw.jpg"
+
+[sub_resource type="Resource" id="Resource_kq75e"]
+metadata/__load_path__ = "res://Scenes/Map/Ground/openart-image_b5DSGxA0_1735698634067_raw.jpg"
+
+[node name="Ground" type="Area2D"]
+z_index = -4096
+collision_layer = 2147483649
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_k46gt")
+
+[node name="Road-" type="Sprite2D" parent="."]
+position = Vector2(-923, 0)
+rotation = 1.5708
+scale = Vector2(0.23, 0.23)
+texture = SubResource("Resource_cgkeb")
+
+[node name="Road0" type="Sprite2D" parent="."]
+position = Vector2(-718, 0)
+rotation = 1.5708
+scale = Vector2(0.23, 0.23)
+texture = SubResource("Resource_qgas0")
+
+[node name="Road1" type="Sprite2D" parent="."]
+position = Vector2(-513, 0)
+rotation = 1.5708
+scale = Vector2(0.23, 0.23)
+texture = SubResource("Resource_i4i2e")
+
+[node name="Road2" type="Sprite2D" parent="."]
+position = Vector2(-308, 0)
+rotation = 1.5708
+scale = Vector2(0.23, 0.23)
+texture = SubResource("Resource_sbxar")
+
+[node name="Road3" type="Sprite2D" parent="."]
+position = Vector2(-103, 0)
+rotation = 1.5708
+scale = Vector2(0.23, 0.23)
+texture = SubResource("Resource_3send")
+
+[node name="Road4" type="Sprite2D" parent="."]
+position = Vector2(103, 0)
+rotation = 1.5708
+scale = Vector2(0.23, 0.23)
+texture = SubResource("Resource_ylsne")
+
+[node name="Road5" type="Sprite2D" parent="."]
+position = Vector2(308, 0)
+rotation = 1.5708
+scale = Vector2(0.23, 0.23)
+texture = SubResource("Resource_6dw58")
+
+[node name="Road6" type="Sprite2D" parent="."]
+position = Vector2(513, 0)
+rotation = 1.5708
+scale = Vector2(0.23, 0.23)
+texture = SubResource("Resource_dflmk")
+
+[node name="Road7" type="Sprite2D" parent="."]
+position = Vector2(718, 0)
+rotation = 1.5708
+scale = Vector2(0.23, 0.23)
+texture = SubResource("Resource_tidba")
+
+[node name="Road+" type="Sprite2D" parent="."]
+position = Vector2(923, 0)
+rotation = 1.5708
+scale = Vector2(0.23, 0.23)
+texture = SubResource("Resource_8kv4k")
+
+[node name="Road+2" type="Sprite2D" parent="."]
+position = Vector2(1129, 0)
+rotation = 1.5708
+scale = Vector2(0.23, 0.23)
+texture = SubResource("Resource_5t8x6")
+
+[node name="Road+3" type="Sprite2D" parent="."]
+position = Vector2(1334, 0)
+rotation = 1.5708
+scale = Vector2(0.23, 0.23)
+texture = SubResource("Resource_w0cn8")
+
+[node name="Road+4" type="Sprite2D" parent="."]
+position = Vector2(1539, 0)
+rotation = 1.5708
+scale = Vector2(0.23, 0.23)
+texture = SubResource("Resource_mtm05")
+
+[node name="Road+5" type="Sprite2D" parent="."]
+position = Vector2(1744, 0)
+rotation = 1.5708
+scale = Vector2(0.23, 0.23)
+texture = SubResource("Resource_rr31w")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+position = Vector2(-500, 300)
+rotation = 3.14159
+mesh = SubResource("PlaneMesh_j5cvp")
+texture = SubResource("Resource_a8e85")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="."]
+position = Vector2(500, 300)
+rotation = 3.14159
+scale = Vector2(-1, 1)
+mesh = SubResource("PlaneMesh_j5cvp")
+texture = SubResource("Resource_myv7v")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="."]
+position = Vector2(1500, 300)
+rotation = -3.14159
+mesh = SubResource("PlaneMesh_j5cvp")
+texture = SubResource("Resource_kemdr")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="."]
+position = Vector2(1500, -300)
+scale = Vector2(-1, 1)
+mesh = SubResource("PlaneMesh_j5cvp")
+texture = SubResource("Resource_ux3ib")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="."]
+position = Vector2(-500, -300)
+rotation = 3.14159
+scale = Vector2(1, -1)
+mesh = SubResource("PlaneMesh_j5cvp")
+texture = SubResource("Resource_nl074")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="."]
+position = Vector2(500, -300)
+rotation = 3.14159
+scale = Vector2(-1, -1)
+mesh = SubResource("PlaneMesh_j5cvp")
+texture = SubResource("Resource_kq75e")

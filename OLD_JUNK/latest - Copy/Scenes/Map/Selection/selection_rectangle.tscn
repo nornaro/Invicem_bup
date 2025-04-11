@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c34xvf4i48axf"]
+
+[ext_resource type="Script" uid="uid://cueq7op2oeolk" path="res://Scenes/Map/Selection/SelectionRectangle.gd" id="1_0u23j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jws3q"]
+size = Vector2(1, 1)
+
+[node name="SelectionRectangle" type="Area2D" groups=["SelectionRectangle"]]
+script = ExtResource("1_0u23j")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_jws3q")
+
+[node name="Fill" type="ColorRect" parent="."]
+color = Color(0, 0, 1, 0.25)

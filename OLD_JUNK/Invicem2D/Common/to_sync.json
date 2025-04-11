@@ -1,0 +1,32 @@
+{
+	"/root/2DClient/Buildings": {
+		"position": true
+	},
+	"/root/2DClient/HealthBar": {
+		"value": true
+	},
+	"/root/2DClient/Map/SelectionRectangle/CollisionShape2D": {
+		"shape.size": true
+	},
+	"/root/2DClient/Map/SelectionRectangle/Fill": {
+		"visible": true
+	},
+	"/root/2DClient/Map/Spawn": {
+		"position": true
+	},
+	"/root/2DClient/Map/Spawn/CollisionShape2D": {
+		"position": true
+	},
+	"/root/2DClient/UI/Camera": {
+		"zoom": true
+	},
+	"/root/2DClient/UI/HealthBar": {
+		"value": true
+	},
+	"/root/2DClient/UI/List": {
+		"item_count": true
+	},
+	"/root/2DClient/UI/Numbers": {
+		"item_count": true
+	}
+}

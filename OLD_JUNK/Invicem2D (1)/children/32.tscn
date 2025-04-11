@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxw742h5ifye0"]
+
+[ext_resource type="Texture2D" uid="uid://ciee7o1xcfgay" path="res://craftpix/2 Objects/4 Stone/10.png" id="1_wyec3"]
+
+[node name="32" type="Sprite2D"]
+texture = ExtResource("1_wyec3")
+centered = false

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="ArrayMesh" path="res://addons/kaykit_medieval_hexagon_pack/Assets/obj/buildings/neutral/wall_straight_gate_door_left.obj" id="1_f5je0"]
+
+[node name="WallStraightGateDoorLeft" type="MeshInstance3D"]
+mesh = ExtResource("1_f5je0")

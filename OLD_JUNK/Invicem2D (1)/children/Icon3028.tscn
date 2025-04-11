@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://craftpix/1 Icons/Icon30_28.png" id="1_m37gi"]
+
+[node name="Icon3028" type="Sprite2D"]
+texture = ExtResource("1_m37gi")

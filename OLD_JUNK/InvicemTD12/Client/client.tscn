@@ -1,0 +1,1147 @@
+[gd_scene load_steps=15 format=3 uid="uid://vedgnf41sk25"]
+
+[ext_resource type="Script" path="res://client.gd" id="1_4davm"]
+[ext_resource type="Script" path="res://Player.gd" id="2_r1j8n"]
+[ext_resource type="Texture2D" uid="uid://8ka2ui7sq36p" path="res://addons/kenney_particle_pack/circle_05.png" id="3_aaore"]
+[ext_resource type="Texture2D" uid="uid://odc0tohtakup" path="res://icon.svg" id="4_0p4do"]
+[ext_resource type="Script" path="res://Back.gd" id="5_ne26a"]
+[ext_resource type="Script" path="res://Area_readme.gd" id="6_mhrfk"]
+[ext_resource type="Script" path="res://Towers.gd" id="7_bjyxl"]
+[ext_resource type="Script" path="res://barracks.gd" id="8_4qmyp"]
+[ext_resource type="Script" path="res://FarmHouse.gd" id="9_k32id"]
+[ext_resource type="PackedScene" uid="uid://brgket0hotyh1" path="res://areas.tscn" id="10_pem5m"]
+[ext_resource type="PackedScene" uid="uid://dyq6fme728g5r" path="res://map.tscn" id="11_whayt"]
+
+[sub_resource type="Environment" id="Environment_h1efj"]
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_8i04l"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_elkya"]
+properties/0/path = NodePath("Maps/1:visible")
+properties/0/spawn = true
+properties/0/sync = true
+properties/0/watch = false
+properties/1/path = NodePath("Maps/2:visible")
+properties/1/spawn = true
+properties/1/sync = true
+properties/1/watch = false
+properties/2/path = NodePath("Maps/3:visible")
+properties/2/spawn = true
+properties/2/sync = true
+properties/2/watch = false
+properties/3/path = NodePath("Maps/4:visible")
+properties/3/spawn = true
+properties/3/sync = true
+properties/3/watch = false
+properties/4/path = NodePath("Maps/5:visible")
+properties/4/spawn = true
+properties/4/sync = true
+properties/4/watch = false
+properties/5/path = NodePath("Maps/6:visible")
+properties/5/spawn = true
+properties/5/sync = true
+properties/5/watch = false
+properties/6/path = NodePath("Maps/7:visible")
+properties/6/spawn = true
+properties/6/sync = true
+properties/6/watch = false
+properties/7/path = NodePath("Maps/8:visible")
+properties/7/spawn = true
+properties/7/sync = true
+properties/7/watch = false
+properties/8/path = NodePath("Maps/9:visible")
+properties/8/spawn = true
+properties/8/sync = true
+properties/8/watch = false
+properties/9/path = NodePath("Player:position")
+properties/9/spawn = true
+properties/9/sync = true
+properties/9/watch = false
+properties/10/path = NodePath("Player:PlayerNumber")
+properties/10/spawn = true
+properties/10/sync = true
+properties/10/watch = false
+
+[node name="Server" type="Node"]
+
+[node name="Client" type="Node" parent="."]
+script = ExtResource("1_4davm")
+
+[node name="Player" type="Node3D" parent="Client"]
+script = ExtResource("2_r1j8n")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Client/Player"]
+transform = Transform3D(-0.866024, -0.433016, 0.250001, 0, 0.499998, 0.866026, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+light_color = Color(1, 1, 0.901961, 1)
+shadow_enabled = true
+
+[node name="Buildings" type="Node3D" parent="Client/Player"]
+
+[node name="HUD" type="Control" parent="Client/Player"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 3
+
+[node name="TextureRect" type="TextureRect" parent="Client/Player/HUD"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.03, 0.03)
+pivot_offset = Vector2(576, 324)
+mouse_filter = 2
+texture = ExtResource("3_aaore")
+stretch_mode = 5
+
+[node name="ToolTip" type="RichTextLabel" parent="Client/Player/HUD"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 330.0
+offset_top = 115.0
+offset_right = 822.0
+offset_bottom = 157.0
+mouse_filter = 2
+bbcode_enabled = true
+scroll_active = false
+tab_size = 1
+shortcut_keys_enabled = false
+
+[node name="Keys" type="VBoxContainer" parent="Client/Player/HUD"]
+layout_mode = 0
+offset_left = 1000.0
+offset_top = 20.0
+offset_right = 1125.0
+offset_bottom = 244.0
+mouse_filter = 2
+
+[node name="Label1" type="Label" parent="Client/Player/HUD/Keys"]
+layout_mode = 2
+text = "Text"
+
+[node name="Label2" type="Label" parent="Client/Player/HUD/Keys"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="Client/Player/HUD/Keys"]
+layout_mode = 2
+text = "Text"
+
+[node name="Label4" type="Label" parent="Client/Player/HUD/Keys"]
+layout_mode = 2
+
+[node name="Label5" type="Label" parent="Client/Player/HUD/Keys"]
+layout_mode = 2
+
+[node name="Label6" type="Label" parent="Client/Player/HUD/Keys"]
+layout_mode = 2
+text = "Text"
+
+[node name="Label7" type="Label" parent="Client/Player/HUD/Keys"]
+layout_mode = 2
+
+[node name="Label8" type="Label" parent="Client/Player/HUD/Keys"]
+layout_mode = 2
+text = "Text"
+
+[node name="Values" type="VBoxContainer" parent="Client/Player/HUD"]
+layout_mode = 0
+offset_left = 1000.0
+offset_top = 20.0
+offset_right = 1125.0
+offset_bottom = 244.0
+mouse_filter = 2
+
+[node name="Label1" type="Label" parent="Client/Player/HUD/Values"]
+layout_mode = 2
+text = "Text"
+horizontal_alignment = 2
+
+[node name="Label2" type="Label" parent="Client/Player/HUD/Values"]
+layout_mode = 2
+horizontal_alignment = 2
+
+[node name="Label3" type="Label" parent="Client/Player/HUD/Values"]
+layout_mode = 2
+text = "Text"
+horizontal_alignment = 2
+
+[node name="Label4" type="Label" parent="Client/Player/HUD/Values"]
+layout_mode = 2
+horizontal_alignment = 2
+
+[node name="Label5" type="Label" parent="Client/Player/HUD/Values"]
+layout_mode = 2
+horizontal_alignment = 2
+
+[node name="Label6" type="Label" parent="Client/Player/HUD/Values"]
+layout_mode = 2
+text = "Text"
+horizontal_alignment = 2
+
+[node name="Label7" type="Label" parent="Client/Player/HUD/Values"]
+layout_mode = 2
+horizontal_alignment = 2
+
+[node name="Label8" type="Label" parent="Client/Player/HUD/Values"]
+layout_mode = 2
+text = "Text"
+horizontal_alignment = 2
+
+[node name="ColorPicker" type="ColorPicker" parent="Client/Player/HUD"]
+visible = false
+layout_mode = 1
+offset_left = 674.0
+offset_top = 382.0
+offset_right = 524.0
+offset_bottom = 562.0
+edit_alpha = false
+picker_shape = 4
+color_modes_visible = false
+presets_visible = false
+
+[node name="MenuButton" type="MenuButton" parent="Client/Player/HUD"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 55.0
+offset_bottom = 55.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="Menu" type="HBoxContainer" parent="Client/Player/HUD"]
+visible = false
+layout_mode = 0
+offset_left = 60.0
+offset_top = 5.0
+offset_right = 434.0
+offset_bottom = 55.0
+mouse_filter = 2
+
+[node name="Button" type="Button" parent="Client/Player/HUD/Menu"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+icon = ExtResource("4_0p4do")
+flat = true
+expand_icon = true
+
+[node name="Button2" type="Button" parent="Client/Player/HUD/Menu"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+icon = ExtResource("4_0p4do")
+flat = true
+expand_icon = true
+
+[node name="Button3" type="Button" parent="Client/Player/HUD/Menu"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+icon = ExtResource("4_0p4do")
+flat = true
+expand_icon = true
+
+[node name="Button4" type="Button" parent="Client/Player/HUD/Menu"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+icon = ExtResource("4_0p4do")
+flat = true
+expand_icon = true
+
+[node name="Button5" type="Button" parent="Client/Player/HUD/Menu"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+icon = ExtResource("4_0p4do")
+flat = true
+expand_icon = true
+
+[node name="Button6" type="Button" parent="Client/Player/HUD/Menu"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+icon = ExtResource("4_0p4do")
+flat = true
+expand_icon = true
+
+[node name="Button7" type="Button" parent="Client/Player/HUD/Menu"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+icon = ExtResource("4_0p4do")
+flat = true
+expand_icon = true
+
+[node name="Info" type="ItemList" parent="Client/Player/HUD"]
+layout_mode = 0
+offset_left = 985.0
+offset_top = 385.0
+offset_right = 1145.0
+offset_bottom = 645.0
+mouse_filter = 2
+
+[node name="Back" type="Control" parent="Client/Player/HUD"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("5_ne26a")
+
+[node name="1" type="Button" parent="Client/Player/HUD/Back"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 300.0
+grow_vertical = 2
+
+[node name="2" type="Button" parent="Client/Player/HUD/Back"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -308.0
+offset_right = -8.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="Areas" type="Control" parent="Client/Player/HUD"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("6_mhrfk")
+
+[node name="Towers" type="Control" parent="Client/Player/HUD/Areas"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("7_bjyxl")
+
+[node name="1" type="Button" parent="Client/Player/HUD/Areas/Towers"]
+layout_mode = 0
+offset_left = 346.0
+offset_top = 70.0
+offset_right = 446.0
+offset_bottom = 170.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="2" type="Button" parent="Client/Player/HUD/Areas/Towers"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 346.0
+offset_top = -468.0
+offset_right = 446.0
+offset_bottom = -368.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="3" type="Button" parent="Client/Player/HUD/Areas/Towers"]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 70.0
+offset_right = 566.0
+offset_bottom = 170.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="4" type="Button" parent="Client/Player/HUD/Areas/Towers"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 466.0
+offset_top = -468.0
+offset_right = 566.0
+offset_bottom = -368.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="5" type="Button" parent="Client/Player/HUD/Areas/Towers"]
+layout_mode = 0
+offset_left = 586.0
+offset_top = 70.0
+offset_right = 686.0
+offset_bottom = 170.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="6" type="Button" parent="Client/Player/HUD/Areas/Towers"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 586.0
+offset_top = -468.0
+offset_right = 686.0
+offset_bottom = -368.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="7" type="Button" parent="Client/Player/HUD/Areas/Towers"]
+layout_mode = 0
+offset_left = 706.0
+offset_top = 70.0
+offset_right = 806.0
+offset_bottom = 170.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="8" type="Button" parent="Client/Player/HUD/Areas/Towers"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 706.0
+offset_top = -468.0
+offset_right = 806.0
+offset_bottom = -368.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="9" type="Button" parent="Client/Player/HUD/Areas/Towers"]
+layout_mode = 0
+offset_left = 346.0
+offset_top = 370.0
+offset_right = 446.0
+offset_bottom = 470.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="10" type="Button" parent="Client/Player/HUD/Areas/Towers"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 346.0
+offset_top = -168.0
+offset_right = 446.0
+offset_bottom = -68.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="11" type="Button" parent="Client/Player/HUD/Areas/Towers"]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 370.0
+offset_right = 566.0
+offset_bottom = 470.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="12" type="Button" parent="Client/Player/HUD/Areas/Towers"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 466.0
+offset_top = -168.0
+offset_right = 566.0
+offset_bottom = -68.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="13" type="Button" parent="Client/Player/HUD/Areas/Towers"]
+layout_mode = 0
+offset_left = 586.0
+offset_top = 370.0
+offset_right = 686.0
+offset_bottom = 470.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="14" type="Button" parent="Client/Player/HUD/Areas/Towers"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 586.0
+offset_top = -168.0
+offset_right = 686.0
+offset_bottom = -68.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="15" type="Button" parent="Client/Player/HUD/Areas/Towers"]
+layout_mode = 0
+offset_left = 706.0
+offset_top = 370.0
+offset_right = 806.0
+offset_bottom = 470.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="16" type="Button" parent="Client/Player/HUD/Areas/Towers"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 706.0
+offset_top = -168.0
+offset_right = 806.0
+offset_bottom = -68.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="Baracks" type="Control" parent="Client/Player/HUD/Areas"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("8_4qmyp")
+
+[node name="1" type="Button" parent="Client/Player/HUD/Areas/Baracks"]
+layout_mode = 0
+offset_left = 346.0
+offset_top = 70.0
+offset_right = 446.0
+offset_bottom = 170.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="2" type="Button" parent="Client/Player/HUD/Areas/Baracks"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 346.0
+offset_top = -468.0
+offset_right = 446.0
+offset_bottom = -368.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="3" type="Button" parent="Client/Player/HUD/Areas/Baracks"]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 70.0
+offset_right = 625.0
+offset_bottom = 170.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="4" type="Button" parent="Client/Player/HUD/Areas/Baracks"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 525.0
+offset_top = -468.0
+offset_right = 625.0
+offset_bottom = -368.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="5" type="Button" parent="Client/Player/HUD/Areas/Baracks"]
+layout_mode = 0
+offset_left = 706.0
+offset_top = 70.0
+offset_right = 806.0
+offset_bottom = 170.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="6" type="Button" parent="Client/Player/HUD/Areas/Baracks"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 706.0
+offset_top = -468.0
+offset_right = 806.0
+offset_bottom = -368.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="7" type="Button" parent="Client/Player/HUD/Areas/Baracks"]
+layout_mode = 0
+offset_left = 346.0
+offset_top = 370.0
+offset_right = 446.0
+offset_bottom = 470.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="8" type="Button" parent="Client/Player/HUD/Areas/Baracks"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 346.0
+offset_top = -168.0
+offset_right = 446.0
+offset_bottom = -68.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="9" type="Button" parent="Client/Player/HUD/Areas/Baracks"]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 370.0
+offset_right = 625.0
+offset_bottom = 470.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="10" type="Button" parent="Client/Player/HUD/Areas/Baracks"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 525.0
+offset_top = -168.0
+offset_right = 625.0
+offset_bottom = -68.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="11" type="Button" parent="Client/Player/HUD/Areas/Baracks"]
+layout_mode = 0
+offset_left = 706.0
+offset_top = 370.0
+offset_right = 806.0
+offset_bottom = 470.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="12" type="Button" parent="Client/Player/HUD/Areas/Baracks"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 706.0
+offset_top = -168.0
+offset_right = 806.0
+offset_bottom = -68.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="FarmHouse" type="Control" parent="Client/Player/HUD/Areas"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("9_k32id")
+
+[node name="1" type="Button" parent="Client/Player/HUD/Areas/FarmHouse"]
+layout_mode = 0
+offset_left = 346.0
+offset_top = 70.0
+offset_right = 446.0
+offset_bottom = 170.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="2" type="Button" parent="Client/Player/HUD/Areas/FarmHouse"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 346.0
+offset_top = -468.0
+offset_right = 446.0
+offset_bottom = -368.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="3" type="Button" parent="Client/Player/HUD/Areas/FarmHouse"]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 70.0
+offset_right = 625.0
+offset_bottom = 170.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="4" type="Button" parent="Client/Player/HUD/Areas/FarmHouse"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 525.0
+offset_top = -468.0
+offset_right = 625.0
+offset_bottom = -368.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="5" type="Button" parent="Client/Player/HUD/Areas/FarmHouse"]
+layout_mode = 0
+offset_left = 706.0
+offset_top = 70.0
+offset_right = 806.0
+offset_bottom = 170.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="6" type="Button" parent="Client/Player/HUD/Areas/FarmHouse"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 706.0
+offset_top = -468.0
+offset_right = 806.0
+offset_bottom = -368.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="7" type="Button" parent="Client/Player/HUD/Areas/FarmHouse"]
+layout_mode = 0
+offset_left = 346.0
+offset_top = 370.0
+offset_right = 446.0
+offset_bottom = 470.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="8" type="Button" parent="Client/Player/HUD/Areas/FarmHouse"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 346.0
+offset_top = -168.0
+offset_right = 446.0
+offset_bottom = -68.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="9" type="Button" parent="Client/Player/HUD/Areas/FarmHouse"]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 370.0
+offset_right = 625.0
+offset_bottom = 470.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="10" type="Button" parent="Client/Player/HUD/Areas/FarmHouse"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 525.0
+offset_top = -168.0
+offset_right = 625.0
+offset_bottom = -68.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="11" type="Button" parent="Client/Player/HUD/Areas/FarmHouse"]
+layout_mode = 0
+offset_left = 706.0
+offset_top = 370.0
+offset_right = 806.0
+offset_bottom = 470.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="12" type="Button" parent="Client/Player/HUD/Areas/FarmHouse"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 706.0
+offset_top = -168.0
+offset_right = 806.0
+offset_bottom = -68.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="ArmoryAcademy" type="Control" parent="Client/Player/HUD/Areas"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("9_k32id")
+
+[node name="1" type="Button" parent="Client/Player/HUD/Areas/ArmoryAcademy"]
+layout_mode = 0
+offset_left = 346.0
+offset_top = 70.0
+offset_right = 446.0
+offset_bottom = 170.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="2" type="Button" parent="Client/Player/HUD/Areas/ArmoryAcademy"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 346.0
+offset_top = -468.0
+offset_right = 446.0
+offset_bottom = -368.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="3" type="Button" parent="Client/Player/HUD/Areas/ArmoryAcademy"]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 70.0
+offset_right = 625.0
+offset_bottom = 170.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="4" type="Button" parent="Client/Player/HUD/Areas/ArmoryAcademy"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 525.0
+offset_top = -468.0
+offset_right = 625.0
+offset_bottom = -368.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="5" type="Button" parent="Client/Player/HUD/Areas/ArmoryAcademy"]
+layout_mode = 0
+offset_left = 706.0
+offset_top = 70.0
+offset_right = 806.0
+offset_bottom = 170.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="6" type="Button" parent="Client/Player/HUD/Areas/ArmoryAcademy"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 706.0
+offset_top = -468.0
+offset_right = 806.0
+offset_bottom = -368.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="7" type="Button" parent="Client/Player/HUD/Areas/ArmoryAcademy"]
+layout_mode = 0
+offset_left = 346.0
+offset_top = 370.0
+offset_right = 446.0
+offset_bottom = 470.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="8" type="Button" parent="Client/Player/HUD/Areas/ArmoryAcademy"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 346.0
+offset_top = -168.0
+offset_right = 446.0
+offset_bottom = -68.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="9" type="Button" parent="Client/Player/HUD/Areas/ArmoryAcademy"]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 370.0
+offset_right = 625.0
+offset_bottom = 470.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="10" type="Button" parent="Client/Player/HUD/Areas/ArmoryAcademy"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 525.0
+offset_top = -168.0
+offset_right = 625.0
+offset_bottom = -68.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="11" type="Button" parent="Client/Player/HUD/Areas/ArmoryAcademy"]
+layout_mode = 0
+offset_left = 706.0
+offset_top = 370.0
+offset_right = 806.0
+offset_bottom = 470.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="12" type="Button" parent="Client/Player/HUD/Areas/ArmoryAcademy"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 706.0
+offset_top = -168.0
+offset_right = 806.0
+offset_bottom = -68.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="Market" type="Control" parent="Client/Player/HUD/Areas"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("9_k32id")
+
+[node name="1" type="Button" parent="Client/Player/HUD/Areas/Market"]
+layout_mode = 0
+offset_left = 346.0
+offset_top = 70.0
+offset_right = 446.0
+offset_bottom = 170.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="2" type="Button" parent="Client/Player/HUD/Areas/Market"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 346.0
+offset_top = -468.0
+offset_right = 446.0
+offset_bottom = -368.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="3" type="Button" parent="Client/Player/HUD/Areas/Market"]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 70.0
+offset_right = 625.0
+offset_bottom = 170.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="4" type="Button" parent="Client/Player/HUD/Areas/Market"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 525.0
+offset_top = -468.0
+offset_right = 625.0
+offset_bottom = -368.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="5" type="Button" parent="Client/Player/HUD/Areas/Market"]
+layout_mode = 0
+offset_left = 706.0
+offset_top = 70.0
+offset_right = 806.0
+offset_bottom = 170.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="6" type="Button" parent="Client/Player/HUD/Areas/Market"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 706.0
+offset_top = -468.0
+offset_right = 806.0
+offset_bottom = -368.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="7" type="Button" parent="Client/Player/HUD/Areas/Market"]
+layout_mode = 0
+offset_left = 346.0
+offset_top = 370.0
+offset_right = 446.0
+offset_bottom = 470.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="8" type="Button" parent="Client/Player/HUD/Areas/Market"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 346.0
+offset_top = -168.0
+offset_right = 446.0
+offset_bottom = -68.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="9" type="Button" parent="Client/Player/HUD/Areas/Market"]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 370.0
+offset_right = 625.0
+offset_bottom = 470.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="10" type="Button" parent="Client/Player/HUD/Areas/Market"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 525.0
+offset_top = -168.0
+offset_right = 625.0
+offset_bottom = -68.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="11" type="Button" parent="Client/Player/HUD/Areas/Market"]
+layout_mode = 0
+offset_left = 706.0
+offset_top = 370.0
+offset_right = 806.0
+offset_bottom = 470.0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="12" type="Button" parent="Client/Player/HUD/Areas/Market"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 706.0
+offset_top = -168.0
+offset_right = 806.0
+offset_bottom = -68.0
+grow_vertical = 0
+icon = ExtResource("4_0p4do")
+expand_icon = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Client/Player"]
+environment = SubResource("Environment_h1efj")
+camera_attributes = SubResource("CameraAttributesPractical_8i04l")
+
+[node name="TOP" type="Camera3D" parent="Client/Player"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 70, 0)
+top_level = true
+fov = 60.0
+
+[node name="Areas" parent="Client/Player" instance=ExtResource("10_pem5m")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+
+[node name="Timer" type="Timer" parent="Client/Player"]
+one_shot = true
+
+[node name="Maps" type="Node3D" parent="Client"]
+
+[node name="1" parent="Client/Maps" instance=ExtResource("11_whayt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -200, 0, -150)
+visible = true
+
+[node name="2" parent="Client/Maps" instance=ExtResource("11_whayt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -150)
+visible = true
+
+[node name="3" parent="Client/Maps" instance=ExtResource("11_whayt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 200, 0, -150)
+visible = true
+
+[node name="4" parent="Client/Maps" instance=ExtResource("11_whayt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -200, 0, 0)
+visible = true
+
+[node name="5" parent="Client/Maps" instance=ExtResource("11_whayt")]
+visible = true
+
+[node name="6" parent="Client/Maps" instance=ExtResource("11_whayt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 200, 0, 0)
+visible = true
+
+[node name="7" parent="Client/Maps" instance=ExtResource("11_whayt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -200, 0, 150)
+visible = true
+
+[node name="8" parent="Client/Maps" instance=ExtResource("11_whayt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 150)
+visible = true
+
+[node name="9" parent="Client/Maps" instance=ExtResource("11_whayt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 200, 0, 150)
+visible = true
+
+[node name="Sun" type="DirectionalLight3D" parent="Client/Maps"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+light_color = Color(1, 1, 0.901961, 1)
+light_energy = 0.75
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 0.0
+sky_mode = 1
+
+[node name="SubViewport" type="SubViewport" parent="Client"]
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="Client"]
+replication_config = SubResource("SceneReplicationConfig_elkya")

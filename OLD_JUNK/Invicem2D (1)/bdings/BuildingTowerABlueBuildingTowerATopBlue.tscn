@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="ArrayMesh" path="res://addons/kaykit_medieval_hexagon_pack/Assets/obj/buildings/blue/building_tower_A_blue_building_tower_A_top_blue.obj" id="1_agin2"]
+
+[node name="BuildingTowerABlueBuildingTowerATopBlue" type="MeshInstance3D"]
+mesh = ExtResource("1_agin2")

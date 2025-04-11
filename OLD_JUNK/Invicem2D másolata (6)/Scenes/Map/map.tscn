@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://c4ma53dgi0oje"]
+
+[ext_resource type="Script" path="res://Scenes/Map/map.gd" id="1_0bqwf"]
+[ext_resource type="PackedScene" uid="uid://cbm6uy5irqlad" path="res://Scenes/Map/Ground/ground.tscn" id="2_m0gtq"]
+[ext_resource type="PackedScene" uid="uid://buq6q3rkgcyaa" path="res://Scenes/Map/Spawn/spawn.tscn" id="3_sk368"]
+[ext_resource type="PackedScene" uid="uid://cq13xgootxplk" path="res://Scenes/Map/In/in.tscn" id="4_65k1d"]
+[ext_resource type="PackedScene" uid="uid://iwp2p55pke5x" path="res://Scenes/Map/Out/out.tscn" id="5_oy5h8"]
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_0bqwf")
+
+[node name="Ground" parent="." instance=ExtResource("2_m0gtq")]
+
+[node name="Spawn" parent="." instance=ExtResource("3_sk368")]
+
+[node name="In" parent="." instance=ExtResource("4_65k1d")]
+
+[node name="Out" parent="." instance=ExtResource("5_oy5h8")]
+
+[connection signal="area_entered" from="Out" to="." method="_on_out_area_entered"]
+
+[editable path="Ground"]
+[editable path="Spawn"]
+[editable path="In"]
+[editable path="Out"]

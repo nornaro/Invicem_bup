@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=3 uid="uid://c64bqwnv25phb"]
+
+[ext_resource type="Texture2D" uid="uid://cufrrxvxrf5ie" path="res://buildings/tower.png" id="1_0nb5l"]
+[ext_resource type="Script" path="res://buildings/tower.gd" id="2_55f2b"]
+[ext_resource type="Script" path="res://Areas/Area2D.gd" id="3_tc1b3"]
+[ext_resource type="PackedScene" uid="uid://bydkjmor6dd4g" path="res://select.tscn" id="4_h5n2u"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_c4ufr"]
+size = Vector2(75, 75)
+orientation = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xg3sn"]
+size = Vector2(50, 50)
+
+[node name="Tower" type="MeshInstance2D"]
+rotation = 3.14159
+scale = Vector2(1.5, 1.5)
+mesh = SubResource("PlaneMesh_c4ufr")
+texture = ExtResource("1_0nb5l")
+script = ExtResource("2_55f2b")
+
+[node name="Area2D" type="Area2D" parent="." groups=["building"]]
+script = ExtResource("3_tc1b3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_xg3sn")
+
+[node name="Select" parent="." instance=ExtResource("4_h5n2u")]
+
+[connection signal="area_entered" from="Area2D" to="Area2D" method="_on_area_entered"]
+[connection signal="area_exited" from="Area2D" to="Area2D" method="_on_area_exited"]

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://3728gq4anpbm"]
+
+[ext_resource type="Script" path="res://node_3d.gd" id="1_sasnq"]
+
+[node name="Show" type="Node3D"]
+script = ExtResource("1_sasnq")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.642788, -0.541675, 0.541675, 0, 0.707107, 0.707107, -0.766045, -0.45452, 0.45452, 10, 10, 10)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.866025, -0.211309, 0.453154, 0, 0.906308, 0.422618, -0.5, -0.365998, 0.784886, 3, 6, 6)

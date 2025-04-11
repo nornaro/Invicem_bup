@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://dd7q4dbq76ilb"]
+
+[ext_resource type="Texture2D" uid="uid://ccjd6ttghd28f" path="res://Scenes/Building/Barrack/Barrack.png" id="1_u8is3"]
+[ext_resource type="Script" path="res://Scenes/Building/Barrack/Barrack.gd" id="2_knmng"]
+[ext_resource type="PackedScene" uid="uid://b365gc0lijb6r" path="res://Scenes/Buildings/Area2D/area_2d.tscn" id="3_rpeaq"]
+[ext_resource type="PackedScene" uid="uid://bydkjmor6dd4g" path="res://Scenes/Buildings/Select/select.tscn" id="5_38c4l"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_pfnuw"]
+size = Vector2(1200, 1073)
+orientation = 2
+
+[node name="78399933628" type="MeshInstance2D" groups=["BuildingMesh"]]
+position = Vector2(-325, -200)
+scale = Vector2(1, -1)
+mesh = SubResource("PlaneMesh_pfnuw")
+texture = ExtResource("1_u8is3")
+script = ExtResource("2_knmng")
+
+[node name="Area2D" parent="." instance=ExtResource("3_rpeaq")]
+visible = false
+scale = Vector2(1200, 1073)
+
+[node name="Outline" type="Line2D" parent="."]
+points = PackedVector2Array(-600, 536.5, -100, -100, 100, -100, 0, 0, 0, 0)
+width = 2.0
+default_color = Color(0, 1, 0, 1)
+
+[node name="Select" parent="." instance=ExtResource("5_38c4l")]
+scale = Vector2(1200, 1073)
+
+[connection signal="area_entered" from="Area2D" to="Area2D" method="_on_area_entered" flags=18]
+[connection signal="area_exited" from="Area2D" to="Area2D" method="_on_area_exited" flags=18]
+[connection signal="input_event" from="Area2D" to="Area2D" method="_on_input_event" flags=18]
+[connection signal="mouse_entered" from="Area2D" to="Area2D" method="_on_mouse_entered" flags=18]
+[connection signal="mouse_exited" from="Area2D" to="Area2D" method="_on_mouse_exited" flags=18]
+
+[editable path="Select"]

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://craftpix/PNG/land/land_23.png" id="1_3d3c6"]
+
+[node name="Land23" type="Sprite2D"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_3d3c6")

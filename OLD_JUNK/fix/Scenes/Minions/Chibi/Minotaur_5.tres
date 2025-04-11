@@ -1,0 +1,311 @@
+[gd_resource type="SpriteFrames" load_steps=70 format=3 uid="uid://bl00m7uy2bt7g"]
+
+[ext_resource type="Texture2D" uid="uid://c5n5i63ih3lnx" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Blinking/Minotaur_02_Idle Blinking_000.webp" id="1_xns7j"]
+[ext_resource type="Texture2D" uid="uid://dthmewcx80aga" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Blinking/Minotaur_02_Idle Blinking_001.webp" id="2_jgp2b"]
+[ext_resource type="Texture2D" uid="uid://diytdcp200lro" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Blinking/Minotaur_02_Idle Blinking_002.webp" id="3_gb41y"]
+[ext_resource type="Texture2D" uid="uid://2pn8xd5lruft" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Blinking/Minotaur_02_Idle Blinking_003.webp" id="4_b74xr"]
+[ext_resource type="Texture2D" uid="uid://d4ko62ywnhxg6" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Blinking/Minotaur_02_Idle Blinking_004.webp" id="5_ew4dm"]
+[ext_resource type="Texture2D" uid="uid://cfkbqkwxpjabk" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Blinking/Minotaur_02_Idle Blinking_005.webp" id="6_2pgsc"]
+[ext_resource type="Texture2D" uid="uid://322ughd600p5" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Blinking/Minotaur_02_Idle Blinking_006.webp" id="7_rr7wj"]
+[ext_resource type="Texture2D" uid="uid://o3uqx54uln4v" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Blinking/Minotaur_02_Idle Blinking_007.webp" id="8_7hh0o"]
+[ext_resource type="Texture2D" uid="uid://dsqxlrhqu2ct2" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Blinking/Minotaur_02_Idle Blinking_008.webp" id="9_jn5rr"]
+[ext_resource type="Texture2D" uid="uid://dxchywdf1hwqb" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Blinking/Minotaur_02_Idle Blinking_009.webp" id="10_jwr2e"]
+[ext_resource type="Texture2D" uid="uid://bi6mcb0xyh2sv" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Blinking/Minotaur_02_Idle Blinking_010.webp" id="11_833v2"]
+[ext_resource type="Texture2D" uid="uid://10luo6rm8ylw" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Blinking/Minotaur_02_Idle Blinking_011.webp" id="12_slons"]
+[ext_resource type="Texture2D" uid="uid://c3o6cowo431d5" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Dying/Minotaur_02_Dying_000.webp" id="13_evulw"]
+[ext_resource type="Texture2D" uid="uid://dw6cidvjiii80" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Dying/Minotaur_02_Dying_001.webp" id="14_uixbx"]
+[ext_resource type="Texture2D" uid="uid://dxwnlffueaci1" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Dying/Minotaur_02_Dying_002.webp" id="15_a0xts"]
+[ext_resource type="Texture2D" uid="uid://b2k7krw36mbx7" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Dying/Minotaur_02_Dying_003.webp" id="16_y1iy8"]
+[ext_resource type="Texture2D" uid="uid://cvc5iehxarhfr" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Dying/Minotaur_02_Dying_004.webp" id="17_2m46h"]
+[ext_resource type="Texture2D" uid="uid://bqebiu423f85y" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Dying/Minotaur_02_Dying_005.webp" id="18_in3l1"]
+[ext_resource type="Texture2D" uid="uid://whbx7okmku60" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Dying/Minotaur_02_Dying_006.webp" id="19_jriud"]
+[ext_resource type="Texture2D" uid="uid://svlglt2k60ns" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Dying/Minotaur_02_Dying_007.webp" id="20_sc7j3"]
+[ext_resource type="Texture2D" uid="uid://bpu8hkgcmr1d2" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Dying/Minotaur_02_Dying_008.webp" id="21_wdvxe"]
+[ext_resource type="Texture2D" uid="uid://cxgeegsgi2xwx" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Dying/Minotaur_02_Dying_009.webp" id="22_5fgva"]
+[ext_resource type="Texture2D" uid="uid://b83pctxh0id3f" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Dying/Minotaur_02_Dying_010.webp" id="23_t2k8d"]
+[ext_resource type="Texture2D" uid="uid://bpy4ev27lkk76" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Dying/Minotaur_02_Dying_011.webp" id="24_y638g"]
+[ext_resource type="Texture2D" uid="uid://crc4yj78raejt" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Dying/Minotaur_02_Dying_012.webp" id="25_8n871"]
+[ext_resource type="Texture2D" uid="uid://c06eidm5cyf2x" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Dying/Minotaur_02_Dying_013.webp" id="26_hbm1j"]
+[ext_resource type="Texture2D" uid="uid://0vv325bdtxhv" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Dying/Minotaur_02_Dying_014.webp" id="27_e73x8"]
+[ext_resource type="Texture2D" uid="uid://bm4frmxuaprk0" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Hurt/Minotaur_02_Hurt_000.webp" id="28_8n871"]
+[ext_resource type="Texture2D" uid="uid://dtcp30quxhxd4" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Hurt/Minotaur_02_Hurt_001.webp" id="29_hbm1j"]
+[ext_resource type="Texture2D" uid="uid://brty4ra1p05xm" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Hurt/Minotaur_02_Hurt_002.webp" id="30_e73x8"]
+[ext_resource type="Texture2D" uid="uid://dknlnav7yq08x" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Hurt/Minotaur_02_Hurt_003.webp" id="31_57j0v"]
+[ext_resource type="Texture2D" uid="uid://bfroehdjcqsp3" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Hurt/Minotaur_02_Hurt_004.webp" id="32_n18qd"]
+[ext_resource type="Texture2D" uid="uid://booljbyn54qbm" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Hurt/Minotaur_02_Hurt_005.webp" id="33_o6msv"]
+[ext_resource type="Texture2D" uid="uid://bogentomboy6s" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Hurt/Minotaur_02_Hurt_006.webp" id="34_7aebo"]
+[ext_resource type="Texture2D" uid="uid://ch5mby3j84bq3" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Hurt/Minotaur_02_Hurt_007.webp" id="35_21mf4"]
+[ext_resource type="Texture2D" uid="uid://ch0au0al8arjs" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Hurt/Minotaur_02_Hurt_008.webp" id="36_yjqpk"]
+[ext_resource type="Texture2D" uid="uid://csqvk8a284qk7" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Hurt/Minotaur_02_Hurt_009.webp" id="37_hqanv"]
+[ext_resource type="Texture2D" uid="uid://tpb6v4tphga4" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Hurt/Minotaur_02_Hurt_010.webp" id="38_kcv0v"]
+[ext_resource type="Texture2D" uid="uid://drh38xpamhxx2" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Hurt/Minotaur_02_Hurt_011.webp" id="39_kpum0"]
+[ext_resource type="Texture2D" uid="uid://cti8y8104uco1" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Idle/Minotaur_02_Idle_000.webp" id="40_q6cp6"]
+[ext_resource type="Texture2D" uid="uid://5ahlm6lyb0wy" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Idle/Minotaur_02_Idle_001.webp" id="41_hccv1"]
+[ext_resource type="Texture2D" uid="uid://buk0dx4oake12" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Idle/Minotaur_02_Idle_002.webp" id="42_pp58t"]
+[ext_resource type="Texture2D" uid="uid://cvnm8t2fj16rm" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Idle/Minotaur_02_Idle_003.webp" id="43_ij3mi"]
+[ext_resource type="Texture2D" uid="uid://6waxae7c2dmu" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Idle/Minotaur_02_Idle_004.webp" id="44_2rwmg"]
+[ext_resource type="Texture2D" uid="uid://cjl4qaseoj2gx" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Idle/Minotaur_02_Idle_005.webp" id="45_od7oa"]
+[ext_resource type="Texture2D" uid="uid://dfbwmymtxcufb" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Idle/Minotaur_02_Idle_006.webp" id="46_4knbd"]
+[ext_resource type="Texture2D" uid="uid://c0vdpeefvr6uc" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Idle/Minotaur_02_Idle_007.webp" id="47_4xa4b"]
+[ext_resource type="Texture2D" uid="uid://ckjva108fj6lo" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Idle/Minotaur_02_Idle_008.webp" id="48_twrtb"]
+[ext_resource type="Texture2D" uid="uid://667h4ss4wmyv" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Idle/Minotaur_02_Idle_009.webp" id="49_ayuk1"]
+[ext_resource type="Texture2D" uid="uid://bmh3fvrkdo41h" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Idle/Minotaur_02_Idle_010.webp" id="50_q7hvk"]
+[ext_resource type="Texture2D" uid="uid://bdjl813wqmc4i" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Idle/Minotaur_02_Idle_011.webp" id="51_0rqc2"]
+[ext_resource type="Texture2D" uid="uid://vbdwj0qn0sbj" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_000.webp" id="52_ixf7l"]
+[ext_resource type="Texture2D" uid="uid://40un50ii78vh" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_001.webp" id="53_7bf7l"]
+[ext_resource type="Texture2D" uid="uid://c7m3gfxyru6n2" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_002.webp" id="54_6357a"]
+[ext_resource type="Texture2D" uid="uid://blmm3654omkp2" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_003.webp" id="55_7p3ia"]
+[ext_resource type="Texture2D" uid="uid://cv0y0id1565uw" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_004.webp" id="56_5fjxy"]
+[ext_resource type="Texture2D" uid="uid://ldrtc08pteq6" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_005.webp" id="57_ibc4x"]
+[ext_resource type="Texture2D" uid="uid://gh71jjn7kof5" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_006.webp" id="58_dh00k"]
+[ext_resource type="Texture2D" uid="uid://drd58sxgavlc5" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_007.webp" id="59_jewqo"]
+[ext_resource type="Texture2D" uid="uid://dqvee34ldwnm1" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_008.webp" id="60_j2ix2"]
+[ext_resource type="Texture2D" uid="uid://bgdyfrk40ok84" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_009.webp" id="61_70o7w"]
+[ext_resource type="Texture2D" uid="uid://bnhpqhreimp8" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_010.webp" id="62_qbuc3"]
+[ext_resource type="Texture2D" uid="uid://gatqtehchsug" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_011.webp" id="63_2wlff"]
+[ext_resource type="Texture2D" uid="uid://dy465eh0y2ayc" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_012.webp" id="64_tf1cp"]
+[ext_resource type="Texture2D" uid="uid://cj2l6e6qu1hb7" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_013.webp" id="65_tqqhv"]
+[ext_resource type="Texture2D" uid="uid://wifqfcmpbrgf" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_014.webp" id="66_jpa0u"]
+[ext_resource type="Texture2D" uid="uid://mv8u7j4a5bqw" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_015.webp" id="67_f5orj"]
+[ext_resource type="Texture2D" uid="uid://b7q12l1nrkvd" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_016.webp" id="68_u08dk"]
+[ext_resource type="Texture2D" uid="uid://hk3roaf485sy" path="res://Scenes/Minions/Chibi/Minotaur_5/PNG Sequences/Walking/Minotaur_02_Walking_017.webp" id="69_46p71"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_xns7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jgp2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_gb41y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_b74xr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ew4dm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2pgsc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rr7wj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7hh0o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jn5rr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jwr2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_833v2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_slons")
+}],
+"loop": true,
+"name": &"Blinking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_evulw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_uixbx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_a0xts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_y1iy8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_2m46h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_in3l1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_jriud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_sc7j3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_wdvxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_5fgva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_t2k8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_y638g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_8n871")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_hbm1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_e73x8")
+}],
+"loop": true,
+"name": &"Dying",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_8n871")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_hbm1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_e73x8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_57j0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_n18qd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_o6msv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_7aebo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_21mf4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_yjqpk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_hqanv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_kcv0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_kpum0")
+}],
+"loop": true,
+"name": &"Hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("40_q6cp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_hccv1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_pp58t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_ij3mi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_2rwmg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_od7oa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_4knbd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_4xa4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_twrtb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_ayuk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_q7hvk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_0rqc2")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("52_ixf7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_7bf7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_6357a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_7p3ia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_5fjxy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_ibc4x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_dh00k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_jewqo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_j2ix2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_70o7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_qbuc3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_2wlff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_tf1cp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_tqqhv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_jpa0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_f5orj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_u08dk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_46p71")
+}],
+"loop": true,
+"name": &"Walking",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

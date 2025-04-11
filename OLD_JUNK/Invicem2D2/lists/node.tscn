@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3lnpt8lrpmbu"]
+
+[ext_resource type="Script" path="res://Scenes/UI/BuildingList.gd" id="1_e8ru7"]
+[ext_resource type="Script" path="res://Scenes/UI/TurretList.gd" id="2_vsqs4"]
+[ext_resource type="Script" path="res://Scenes/UI/BuildingMenu.gd" id="3_jil8l"]
+
+[node name="Node" type="Node"]
+
+[node name="BuildingList" type="ItemList" parent="."]
+visible = false
+offset_left = -920.0
+offset_top = -480.0
+offset_right = -836.0
+offset_bottom = -360.0
+auto_height = true
+script = ExtResource("1_e8ru7")
+
+[node name="TurretList" type="ItemList" parent="."]
+visible = false
+offset_left = -920.0
+offset_top = -480.0
+offset_right = -836.0
+offset_bottom = -360.0
+auto_height = true
+script = ExtResource("2_vsqs4")
+
+[node name="BuildingMenuList" type="ItemList" parent="."]
+visible = false
+clip_contents = false
+offset_left = -920.0
+offset_top = -480.0
+offset_right = -836.0
+offset_bottom = -360.0
+script = ExtResource("3_jil8l")
+
+[connection signal="item_selected" from="BuildingList" to="BuildingList" method="_on_item_selected"]
+[connection signal="item_selected" from="TurretList" to="TurretList" method="_on_item_selected"]
+[connection signal="item_selected" from="BuildingMenuList" to="BuildingMenuList" method="_on_item_selected"]

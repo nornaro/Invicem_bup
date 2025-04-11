@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Texture2D" path="res://craftpix/3 Animated Objects/2 Campfire/1.png" id="1_uhgh8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xh10"]
+atlas = ExtResource("1_uhgh8")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1emfl"]
+atlas = ExtResource("1_uhgh8")
+region = Rect2(32, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m6jb2"]
+atlas = ExtResource("1_uhgh8")
+region = Rect2(64, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxcdb"]
+atlas = ExtResource("1_uhgh8")
+region = Rect2(96, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xhgwj"]
+atlas = ExtResource("1_uhgh8")
+region = Rect2(128, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_veovj"]
+atlas = ExtResource("1_uhgh8")
+region = Rect2(160, 0, 32, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uid5q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3xh10")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1emfl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m6jb2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nxcdb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xhgwj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_veovj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="74" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_uid5q")

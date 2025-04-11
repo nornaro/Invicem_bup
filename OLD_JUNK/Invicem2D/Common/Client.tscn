@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn8n7fda0d7tf"]
+
+[ext_resource type="Script" path="res://Common/PropertySynchronizer.gd" id="1_ttgro"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_4yon8"]
+properties/0/path = NodePath("Node2D:rotation")
+properties/0/spawn = true
+properties/0/sync = true
+properties/0/watch = false
+
+[node name="PropertySynchronizer" type="MultiplayerSynchronizer"]
+replication_config = SubResource("SceneReplicationConfig_4yon8")
+public_visibility = false
+script = ExtResource("1_ttgro")
+
+[node name="Node2D" type="Node2D" parent="."]

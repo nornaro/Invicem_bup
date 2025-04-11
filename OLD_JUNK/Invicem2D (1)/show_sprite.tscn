@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsfyqtvoinorr"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_8xxij"]
+viewport_path = NodePath("SubViewport")
+
+[node name="ShowSprite" type="Sprite2D"]
+texture = SubResource("ViewportTexture_8xxij")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+physics_interpolation_mode = 1
+transparent_bg = true
+size = Vector2i(4096, 4096)
+
+[node name="Sun" type="DirectionalLight3D" parent="SubViewport"]
+transform = Transform3D(0.642788, -0.541675, 0.541675, 0, 0.707107, 0.707107, -0.766044, -0.454519, 0.454519, 10, 10, 10)
+light_color = Color(0.695503, 0.695503, 0.695503, 1)
+shadow_enabled = true
+sky_mode = 1
+
+[node name="Camera3D" type="Camera3D" parent="SubViewport"]
+transform = Transform3D(0.866025, -0.211309, 0.453154, 0, 0.906308, 0.422618, -0.5, -0.365998, 0.784886, 8.5, 8, 15)

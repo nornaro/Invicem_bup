@@ -1,0 +1,87 @@
+[gd_scene load_steps=8 format=3 uid="uid://c8oqxmm2w2wvv"]
+
+[ext_resource type="Script" path="res://world.gd" id="1_6tkge"]
+[ext_resource type="Script" path="res://Players.gd" id="2_lxacq"]
+[ext_resource type="Script" path="res://Maps.gd" id="3_hk8d4"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_u5pdl"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_w2qqb"]
+sky_material = SubResource("ProceduralSkyMaterial_u5pdl")
+
+[sub_resource type="Environment" id="Environment_6knbf"]
+background_mode = 2
+sky = SubResource("Sky_w2qqb")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_ewcqi"]
+properties/0/path = NodePath(".:Player")
+properties/0/spawn = true
+properties/0/sync = true
+properties/1/path = NodePath("Players:process_priority")
+properties/1/spawn = true
+properties/1/sync = true
+properties/2/path = NodePath("Maps:position")
+properties/2/spawn = true
+properties/2/sync = true
+properties/3/path = NodePath("Maps:collision_layer")
+properties/3/spawn = true
+properties/3/sync = true
+
+[node name="World" type="WorldEnvironment"]
+environment = SubResource("Environment_6knbf")
+script = ExtResource("1_6tkge")
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://player.tscn")
+spawn_path = NodePath("../Players")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Players" type="Node3D" parent="."]
+script = ExtResource("2_lxacq")
+
+[node name="Maps" type="GridMap" parent="."]
+script = ExtResource("3_hk8d4")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+offset_left = 438.0
+offset_top = 242.0
+offset_right = 714.0
+offset_bottom = 406.0
+theme_override_constants/separation = 15
+
+[node name="HostButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Host"
+
+[node name="JoinButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Join"
+
+[node name="Name" type="LineEdit" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Enter Address to Join Here"
+alignment = 1
+
+[node name="AddressEntry" type="LineEdit" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Enter Address to Join Here"
+alignment = 1
+
+[node name="Camera3D" type="Camera3D" parent="."]
+fov = 30.0
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_ewcqi")
+
+[connection signal="spawned" from="MultiplayerSpawner" to="." method="_on_multiplayer_spawner_spawned"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/HostButton" to="." method="_on_host_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/JoinButton" to="." method="_on_join_button_pressed"]

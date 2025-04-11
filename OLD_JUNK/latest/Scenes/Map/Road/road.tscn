@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2qsbye225y0r"]
+
+[ext_resource type="Script" uid="uid://cac5tnp66x4bj" path="res://Scenes/Map/Road/road.gd" id="1_7u18w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_djfgi"]
+size = Vector2(2560, 200)
+
+[node name="Road" type="Area2D"]
+collision_layer = 9
+collision_mask = 9
+script = ExtResource("1_7u18w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(425, 0)
+shape = SubResource("RectangleShape2D_djfgi")

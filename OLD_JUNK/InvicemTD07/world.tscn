@@ -1,0 +1,69 @@
+[gd_scene load_steps=7 format=3 uid="uid://cnl3pa8tcpidv"]
+
+[ext_resource type="Script" path="res://World.gd" id="1_knm6b"]
+[ext_resource type="Script" path="res://Players.gd" id="2_3mcmg"]
+[ext_resource type="Script" path="res://Maps.gd" id="3_i37rv"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_u5pdl"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_w2qqb"]
+sky_material = SubResource("ProceduralSkyMaterial_u5pdl")
+
+[sub_resource type="Environment" id="Environment_6knbf"]
+background_mode = 2
+sky = SubResource("Sky_w2qqb")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="World" type="WorldEnvironment"]
+environment = SubResource("Environment_6knbf")
+script = ExtResource("1_knm6b")
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://player.tscn", "res://map.tscn")
+spawn_path = NodePath("../Players")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Players" type="Node" parent="."]
+script = ExtResource("2_3mcmg")
+
+[node name="Map" type="Node" parent="."]
+script = ExtResource("3_i37rv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+offset_left = 423.0
+offset_top = 227.0
+offset_right = 729.0
+offset_bottom = 421.0
+theme_override_constants/separation = 15
+
+[node name="HostButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Host"
+
+[node name="JoinButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Join"
+
+[node name="Name" type="LineEdit" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Name"
+alignment = 1
+
+[node name="AddressEntry" type="LineEdit" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Enter Address to Join Here"
+alignment = 1
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[connection signal="spawned" from="MultiplayerSpawner" to="." method="_on_multiplayer_spawner_spawned"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/HostButton" to="." method="_on_host_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/JoinButton" to="." method="_on_join_button_pressed"]

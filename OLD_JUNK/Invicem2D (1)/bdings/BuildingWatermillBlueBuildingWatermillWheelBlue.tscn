@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="ArrayMesh" path="res://addons/kaykit_medieval_hexagon_pack/Assets/obj/buildings/blue/building_watermill_blue_building_watermill_wheel_blue.obj" id="1_3xm5v"]
+
+[node name="BuildingWatermillBlueBuildingWatermillWheelBlue" type="MeshInstance3D"]
+mesh = ExtResource("1_3xm5v")

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://otpjd1ayat0v"]
+
+[ext_resource type="Script" path="res://server.gd" id="1_kirsa"]
+[ext_resource type="PackedScene" uid="uid://dyq6fme728g5r" path="res://map.tscn" id="2_8qfyc"]
+
+[node name="Server" type="Node"]
+script = ExtResource("1_kirsa")
+
+[node name="Map" parent="." instance=ExtResource("2_8qfyc")]
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://tower.tscn", "res://market.tscn", "res://house.tscn", "res://castle.tscn", "res://barrack.tscn", "res://armory.tscn")
+spawn_path = NodePath("..")

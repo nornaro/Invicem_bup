@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://daj6ie22424ki"]
+
+[ext_resource type="Script" uid="uid://tca8s0h3fn50" path="res://Scenes/Map/fence.gd" id="1_us2b2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oydqy"]
+size = Vector2(2816, 10)
+
+[node name="Fence" type="Area2D"]
+collision_layer = 9
+collision_mask = 9
+script = ExtResource("1_us2b2")
+
+[node name="Bot" type="CollisionShape2D" parent="."]
+position = Vector2(475, 94)
+shape = SubResource("RectangleShape2D_oydqy")
+
+[node name="Top" type="CollisionShape2D" parent="."]
+position = Vector2(475, -95)
+shape = SubResource("RectangleShape2D_oydqy")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
+[connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
+[connection signal="area_shape_exited" from="." to="." method="_on_area_shape_exited"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
+[connection signal="body_shape_exited" from="." to="." method="_on_body_shape_exited"]

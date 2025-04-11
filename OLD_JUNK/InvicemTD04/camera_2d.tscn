@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://7j5my5r3xfrv"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_254ph"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/sync = true
+
+[node name="Camera2D" type="Camera2D"]
+
+[node name="MultiplayerPlayer" type="Node" parent="."]
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="MultiplayerPlayer"]
+root_path = NodePath("../..")
+replication_config = SubResource("SceneReplicationConfig_254ph")

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cva6ir8oexwoy"]
+
+[ext_resource type="PackedScene" uid="uid://c1j7an8woikyd" path="res://environment.tscn" id="1_5grnj"]
+
+[node name="Plane" instance=ExtResource("1_5grnj")]

@@ -1,0 +1,107 @@
+[gd_scene load_steps=17 format=3 uid="uid://c4ma53dgi0oje"]
+
+[ext_resource type="PackedScene" uid="uid://cbm6uy5irqlad" path="res://Scenes/Map/Ground/ground.tscn" id="2_m0gtq"]
+[ext_resource type="PackedScene" uid="uid://buq6q3rkgcyaa" path="res://Scenes/Map/Spawn/spawn.tscn" id="3_sk368"]
+[ext_resource type="PackedScene" uid="uid://cq13xgootxplk" path="res://Scenes/Map/In/in.tscn" id="4_65k1d"]
+[ext_resource type="PackedScene" uid="uid://iwp2p55pke5x" path="res://Scenes/Map/Out/out.tscn" id="5_oy5h8"]
+[ext_resource type="PackedScene" uid="uid://bl7fsct6364pn" path="res://Scenes/Map/Fog/fog.tscn" id="7_eu35m"]
+[ext_resource type="Script" uid="uid://d24q8khh27avw" path="res://Scenes/Map/road.gd" id="7_oydqy"]
+[ext_resource type="PackedScene" uid="uid://c34xvf4i48axf" path="res://Scenes/Map/Selection/selection_rectangle.tscn" id="7_v3nu7"]
+
+[sub_resource type="Gradient" id="Gradient_xklc3"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_8k5ns"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_g15sm"]
+color_ramp = SubResource("Gradient_xklc3")
+noise = SubResource("FastNoiseLite_8k5ns")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_arwk6"]
+transparency = 1
+albedo_color = Color(0, 0, 0, 1)
+albedo_texture = SubResource("NoiseTexture2D_g15sm")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_14282"]
+material = SubResource("StandardMaterial3D_arwk6")
+size = Vector2(3000, 2000)
+orientation = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qo1ir"]
+size = Vector2(2550, 500)
+orientation = 2
+
+[sub_resource type="Gradient" id="Gradient_hwrr3"]
+offsets = PackedFloat32Array()
+colors = PackedColorArray()
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_iuac6"]
+gradient = SubResource("Gradient_hwrr3")
+fill = 2
+fill_to = Vector2(1, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eu35m"]
+size = Vector2(1700, 200)
+
+[node name="Map" type="Node2D" groups=["Map"]]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_14282")
+
+[node name="MeshInstance2D15" type="MeshInstance2D" parent="."]
+visible = false
+show_behind_parent = true
+position = Vector2(-17, -11)
+rotation = 1.5708
+mesh = SubResource("PlaneMesh_qo1ir")
+texture = SubResource("GradientTexture2D_iuac6")
+
+[node name="Spawn" parent="." instance=ExtResource("3_sk368")]
+top_level = true
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+
+[node name="Positions" parent="Spawn" index="0"]
+modulate = Color(1, 0, 1, 1)
+disabled = true
+debug_color = Color(0, 1, 1, 1)
+
+[node name="In" parent="." groups=["In"] instance=ExtResource("4_65k1d")]
+position = Vector2(1704, 0)
+
+[node name="Out" parent="." groups=["Out"] instance=ExtResource("5_oy5h8")]
+position = Vector2(-850, 0)
+
+[node name="Top" type="Node2D" parent="."]
+visible = false
+position = Vector2(-800, -450)
+
+[node name="Bot" type="Node2D" parent="."]
+visible = false
+position = Vector2(-800, 130)
+
+[node name="SelectionRectangle" parent="." instance=ExtResource("7_v3nu7")]
+
+[node name="Fill" parent="SelectionRectangle" index="1"]
+metadata/_edit_use_anchors_ = true
+
+[node name="Fog" parent="." instance=ExtResource("7_eu35m")]
+z_index = 4000
+
+[node name="Ground" parent="." instance=ExtResource("2_m0gtq")]
+
+[node name="Road" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 8
+script = ExtResource("7_oydqy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Road"]
+position = Vector2(850, 0)
+shape = SubResource("RectangleShape2D_eu35m")
+
+[editable path="Spawn"]
+[editable path="In"]
+[editable path="Out"]
+[editable path="SelectionRectangle"]

@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://cfyt5t2ise2d8"]
+
+[ext_resource type="Script" path="res://Player/Player.cs" id="1_53pbs"]
+[ext_resource type="SpriteFrames" uid="uid://cf5k87f7rn67l" path="res://Player/NinjaFrog.tres" id="2_iqmrn"]
+[ext_resource type="FontFile" uid="uid://des0woe0cxl1n" path="res://Sprites/opensans_semibold.ttf" id="17_m1eln"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_8kwh0"]
+properties/0/path = NodePath("../PlayerTag:text")
+properties/0/spawn = true
+properties/0/sync = true
+properties/1/path = NodePath("..:position")
+properties/1/spawn = true
+properties/1/sync = true
+properties/2/path = NodePath("..:rotation")
+properties/2/spawn = true
+properties/2/sync = true
+properties/3/path = NodePath("../Sprite:sprite_frames")
+properties/3/spawn = true
+properties/3/sync = true
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_cpgaj"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_53pbs")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_8kwh0")
+
+[node name="Sprite" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0)
+sprite_frames = ExtResource("2_iqmrn")
+animation = &"DoubleJump"
+
+[node name="PlayerTag" type="Label" parent="."]
+offset_left = -61.0
+offset_top = -56.0
+offset_right = 64.0
+offset_bottom = -27.0
+theme_override_fonts/font = ExtResource("17_m1eln")
+theme_override_font_sizes/font_size = 18
+text = "Tag"
+horizontal_alignment = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("CapsuleShape3D_cpgaj")

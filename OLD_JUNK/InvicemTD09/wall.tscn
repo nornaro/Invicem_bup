@@ -1,0 +1,76 @@
+[gd_scene load_steps=25 format=3 uid="uid://bm524htn40l71"]
+
+[ext_resource type="PackedScene" uid="uid://d4i7ldvpfbb0x" path="res://models/wall/wall.dae" id="1_gd3hl"]
+[ext_resource type="PackedScene" uid="uid://cxe5sicvrh8qg" path="res://models/wall/wallCorner.dae" id="2_h7b46"]
+[ext_resource type="PackedScene" uid="uid://busjyxtw7lvvi" path="res://models/wall/wallDecorationA.dae" id="3_l678o"]
+[ext_resource type="PackedScene" uid="uid://dc5uigphukgja" path="res://models/wall/wallDecorationB.dae" id="4_cp7u7"]
+[ext_resource type="PackedScene" uid="uid://blbgmwhwwd3qw" path="res://models/wall/wallIntersection.dae" id="5_0ilf6"]
+[ext_resource type="PackedScene" uid="uid://btfi2igr0twex" path="res://models/wall/wallSingle.dae" id="6_48sl2"]
+[ext_resource type="PackedScene" uid="uid://bu1mdc0lpdyys" path="res://models/wall/wallSingle_broken.dae" id="7_glhh1"]
+[ext_resource type="PackedScene" uid="uid://c12egb73kyrc3" path="res://models/wall/wallSingle_corner.dae" id="8_1i0xn"]
+[ext_resource type="PackedScene" uid="uid://dpn8tgn2upypk" path="res://models/wall/wallSingle_decorationA.dae" id="9_dy6f3"]
+[ext_resource type="PackedScene" uid="uid://cekax4s5hh1p4" path="res://models/wall/wallSingle_decorationB.dae" id="10_7h6o8"]
+[ext_resource type="PackedScene" uid="uid://dpuj7ic2wwfl2" path="res://models/wall/wallSingle_door.dae" id="11_df72f"]
+[ext_resource type="PackedScene" uid="uid://ce6prppkro2uu" path="res://models/wall/wallSingle_split.dae" id="12_qbfdv"]
+[ext_resource type="PackedScene" uid="uid://biiy0t6fx5dux" path="res://models/wall/wallSingle_window.dae" id="13_cfs3g"]
+[ext_resource type="PackedScene" uid="uid://dg168ikq0pr3d" path="res://models/wall/wallSingle_windowGate.dae" id="14_50mos"]
+[ext_resource type="PackedScene" uid="uid://cwursdhyubbhs" path="res://models/wall/wallSplit.dae" id="15_0ls1f"]
+[ext_resource type="PackedScene" uid="uid://bpkaqyf80qsl8" path="res://models/wall/wall_broken.dae" id="16_pe2d0"]
+[ext_resource type="PackedScene" uid="uid://dlaqawmjs0eta" path="res://models/wall/wall_door.dae" id="17_707cx"]
+[ext_resource type="PackedScene" uid="uid://h13moprb2mdw" path="res://models/wall/wall_end.dae" id="18_313oh"]
+[ext_resource type="PackedScene" uid="uid://bqwlcok1nc0hl" path="res://models/wall/wall_end_broken.dae" id="19_6u3u4"]
+[ext_resource type="PackedScene" uid="uid://rtrsfm1ygtmj" path="res://models/wall/wall_gate.dae" id="20_x83fk"]
+[ext_resource type="PackedScene" uid="uid://d3spvcd73w4dx" path="res://models/wall/wall_gateCorner.dae" id="21_ox47l"]
+[ext_resource type="PackedScene" uid="uid://somuee4e52nl" path="res://models/wall/wall_gateDoor.dae" id="22_uwc5v"]
+[ext_resource type="PackedScene" uid="uid://dr4y6mc8cpiea" path="res://models/wall/wall_window.dae" id="23_jppss"]
+[ext_resource type="PackedScene" uid="uid://bpmta1vx86mjk" path="res://models/wall/wall_windowGate.dae" id="24_b15le"]
+
+[node name="Node" type="Node"]
+
+[node name="wall" parent="." instance=ExtResource("1_gd3hl")]
+
+[node name="wallCorner" parent="." instance=ExtResource("2_h7b46")]
+
+[node name="wallDecorationA" parent="." instance=ExtResource("3_l678o")]
+
+[node name="wallDecorationB" parent="." instance=ExtResource("4_cp7u7")]
+
+[node name="wallIntersection" parent="." instance=ExtResource("5_0ilf6")]
+
+[node name="wallSingle" parent="." instance=ExtResource("6_48sl2")]
+
+[node name="wallSingle_broken" parent="." instance=ExtResource("7_glhh1")]
+
+[node name="wallSingle_corner" parent="." instance=ExtResource("8_1i0xn")]
+
+[node name="wallSingle_decorationA" parent="." instance=ExtResource("9_dy6f3")]
+
+[node name="wallSingle_decorationB" parent="." instance=ExtResource("10_7h6o8")]
+
+[node name="wallSingle_door" parent="." instance=ExtResource("11_df72f")]
+
+[node name="wallSingle_split" parent="." instance=ExtResource("12_qbfdv")]
+
+[node name="wallSingle_window" parent="." instance=ExtResource("13_cfs3g")]
+
+[node name="wallSingle_windowGate" parent="." instance=ExtResource("14_50mos")]
+
+[node name="wallSplit" parent="." instance=ExtResource("15_0ls1f")]
+
+[node name="wall_broken" parent="." instance=ExtResource("16_pe2d0")]
+
+[node name="wall_door" parent="." instance=ExtResource("17_707cx")]
+
+[node name="wall_end" parent="." instance=ExtResource("18_313oh")]
+
+[node name="wall_end_broken" parent="." instance=ExtResource("19_6u3u4")]
+
+[node name="wall_gate" parent="." instance=ExtResource("20_x83fk")]
+
+[node name="wall_gateCorner" parent="." instance=ExtResource("21_ox47l")]
+
+[node name="wall_gateDoor" parent="." instance=ExtResource("22_uwc5v")]
+
+[node name="wall_window" parent="." instance=ExtResource("23_jppss")]
+
+[node name="wall_windowGate" parent="." instance=ExtResource("24_b15le")]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dapksnw2kiw0"]
+
+[ext_resource type="ArrayMesh" uid="uid://b1nud8twucr00" path="res://addons/kaykit_medieval_hexagon_pack/Assets/obj/buildings/blue/building_castle_blue.obj" id="1_wg104"]
+
+[sub_resource type="MeshTexture" id="MeshTexture_5jcl3"]
+mesh = ExtResource("1_wg104")
+
+[node name="Sprite2D" type="Sprite2D"]
+texture = SubResource("MeshTexture_5jcl3")

@@ -1,0 +1,786 @@
+[gd_scene load_steps=262 format=3 uid="uid://ddf8hs8w17igx"]
+
+[ext_resource type="Script" path="res://tiles.gd" id="1_ceq0m"]
+[ext_resource type="PackedScene" path="res://children/1.tscn" id="2_b7x5u"]
+[ext_resource type="PackedScene" path="res://children/2.tscn" id="3_wt2y4"]
+[ext_resource type="PackedScene" uid="uid://brmslem2piped" path="res://children/3.tscn" id="4_hsu0i"]
+[ext_resource type="PackedScene" path="res://children/4.tscn" id="5_0h4vr"]
+[ext_resource type="PackedScene" path="res://children/5.tscn" id="6_q4ul5"]
+[ext_resource type="PackedScene" uid="uid://c526ecimi2w6a" path="res://children/6.tscn" id="7_mc2di"]
+[ext_resource type="PackedScene" path="res://children/7.tscn" id="8_t8ucl"]
+[ext_resource type="PackedScene" path="res://children/8.tscn" id="9_fbmqk"]
+[ext_resource type="PackedScene" path="res://children/9.tscn" id="10_q22pr"]
+[ext_resource type="PackedScene" path="res://children/10.tscn" id="11_v6s8u"]
+[ext_resource type="PackedScene" path="res://children/11.tscn" id="12_q63v8"]
+[ext_resource type="PackedScene" path="res://children/12.tscn" id="13_63o6s"]
+[ext_resource type="PackedScene" path="res://children/13.tscn" id="14_4i61k"]
+[ext_resource type="PackedScene" path="res://children/14.tscn" id="15_3hxdw"]
+[ext_resource type="PackedScene" path="res://children/15.tscn" id="16_wwya3"]
+[ext_resource type="PackedScene" path="res://children/16.tscn" id="17_q0wtc"]
+[ext_resource type="PackedScene" path="res://children/17.tscn" id="18_hbf8g"]
+[ext_resource type="PackedScene" path="res://children/18.tscn" id="19_d2k31"]
+[ext_resource type="PackedScene" path="res://children/19.tscn" id="20_pdeg4"]
+[ext_resource type="PackedScene" path="res://children/20.tscn" id="21_mi1st"]
+[ext_resource type="PackedScene" path="res://children/21.tscn" id="22_4n7fs"]
+[ext_resource type="PackedScene" path="res://children/22.tscn" id="23_1fih2"]
+[ext_resource type="PackedScene" path="res://children/23.tscn" id="24_ncind"]
+[ext_resource type="PackedScene" path="res://children/24.tscn" id="25_0e4ai"]
+[ext_resource type="PackedScene" path="res://children/25.tscn" id="26_7qng2"]
+[ext_resource type="PackedScene" path="res://children/26.tscn" id="27_hof4b"]
+[ext_resource type="PackedScene" path="res://children/27.tscn" id="28_ivskh"]
+[ext_resource type="PackedScene" path="res://children/28.tscn" id="29_be56b"]
+[ext_resource type="PackedScene" path="res://children/29.tscn" id="30_vvori"]
+[ext_resource type="PackedScene" path="res://children/30.tscn" id="31_02345"]
+[ext_resource type="PackedScene" path="res://children/31.tscn" id="32_ck7i5"]
+[ext_resource type="PackedScene" uid="uid://bxw742h5ifye0" path="res://children/32.tscn" id="33_q6w6j"]
+[ext_resource type="PackedScene" path="res://children/33.tscn" id="34_0h1a6"]
+[ext_resource type="PackedScene" path="res://children/34.tscn" id="35_qorwg"]
+[ext_resource type="PackedScene" path="res://children/35.tscn" id="36_6wp70"]
+[ext_resource type="PackedScene" path="res://children/36.tscn" id="37_5dyp7"]
+[ext_resource type="PackedScene" path="res://children/37.tscn" id="38_5g4cs"]
+[ext_resource type="PackedScene" path="res://children/38.tscn" id="39_3jisd"]
+[ext_resource type="PackedScene" path="res://children/39.tscn" id="40_jb5w2"]
+[ext_resource type="PackedScene" path="res://children/40.tscn" id="41_46mq3"]
+[ext_resource type="PackedScene" path="res://children/41.tscn" id="42_n1sls"]
+[ext_resource type="PackedScene" path="res://children/42.tscn" id="43_s1bim"]
+[ext_resource type="PackedScene" path="res://children/43.tscn" id="44_fqnuj"]
+[ext_resource type="PackedScene" path="res://children/44.tscn" id="45_3brdk"]
+[ext_resource type="PackedScene" path="res://children/45.tscn" id="46_2xbn0"]
+[ext_resource type="PackedScene" path="res://children/46.tscn" id="47_nwu55"]
+[ext_resource type="PackedScene" path="res://children/47.tscn" id="48_u1odj"]
+[ext_resource type="PackedScene" path="res://children/48.tscn" id="49_jktql"]
+[ext_resource type="PackedScene" path="res://children/49.tscn" id="50_v88m3"]
+[ext_resource type="PackedScene" path="res://children/50.tscn" id="51_ha62u"]
+[ext_resource type="PackedScene" path="res://children/51.tscn" id="52_74wej"]
+[ext_resource type="PackedScene" path="res://children/52.tscn" id="53_amopo"]
+[ext_resource type="PackedScene" path="res://children/53.tscn" id="54_3csh8"]
+[ext_resource type="PackedScene" path="res://children/54.tscn" id="55_0t4q3"]
+[ext_resource type="PackedScene" path="res://children/55.tscn" id="56_mywt0"]
+[ext_resource type="PackedScene" path="res://children/56.tscn" id="57_18pgl"]
+[ext_resource type="PackedScene" path="res://children/57.tscn" id="58_pls8m"]
+[ext_resource type="PackedScene" path="res://children/58.tscn" id="59_welxj"]
+[ext_resource type="PackedScene" path="res://children/59.tscn" id="60_xt6vx"]
+[ext_resource type="PackedScene" path="res://children/60.tscn" id="61_mseas"]
+[ext_resource type="PackedScene" path="res://children/61.tscn" id="62_pbcke"]
+[ext_resource type="PackedScene" path="res://children/62.tscn" id="63_6meh2"]
+[ext_resource type="PackedScene" path="res://children/63.tscn" id="64_7uoqy"]
+[ext_resource type="PackedScene" path="res://children/64.tscn" id="65_janmx"]
+[ext_resource type="PackedScene" path="res://children/65.tscn" id="66_ki3t8"]
+[ext_resource type="PackedScene" path="res://children/66.tscn" id="67_1tmjw"]
+[ext_resource type="PackedScene" path="res://children/67.tscn" id="68_np22n"]
+[ext_resource type="PackedScene" path="res://children/68.tscn" id="69_vo75g"]
+[ext_resource type="PackedScene" path="res://children/69.tscn" id="70_qfp14"]
+[ext_resource type="PackedScene" path="res://children/70.tscn" id="71_v882k"]
+[ext_resource type="PackedScene" path="res://children/71.tscn" id="72_ebhe8"]
+[ext_resource type="PackedScene" path="res://children/72.tscn" id="73_2hnfh"]
+[ext_resource type="PackedScene" path="res://children/73.tscn" id="74_yls14"]
+[ext_resource type="PackedScene" path="res://children/74.tscn" id="75_bcq8y"]
+[ext_resource type="PackedScene" path="res://children/75.tscn" id="76_ew5hp"]
+[ext_resource type="PackedScene" path="res://children/Box1.tscn" id="77_rh112"]
+[ext_resource type="PackedScene" path="res://children/Box2.tscn" id="78_dxv7j"]
+[ext_resource type="PackedScene" path="res://children/Box3.tscn" id="79_xo0ef"]
+[ext_resource type="PackedScene" path="res://children/Box4.tscn" id="80_7ldct"]
+[ext_resource type="PackedScene" path="res://children/Dirt1.tscn" id="81_oak5k"]
+[ext_resource type="PackedScene" path="res://children/Dirt2.tscn" id="82_lrirv"]
+[ext_resource type="PackedScene" path="res://children/Dirt3.tscn" id="83_012hn"]
+[ext_resource type="PackedScene" path="res://children/Dirt4.tscn" id="84_7abxd"]
+[ext_resource type="PackedScene" path="res://children/Dirt5.tscn" id="85_v0hvt"]
+[ext_resource type="PackedScene" path="res://children/Dirt6.tscn" id="86_cqtns"]
+[ext_resource type="PackedScene" path="res://children/Icon2801.tscn" id="87_isxxr"]
+[ext_resource type="PackedScene" path="res://children/Icon2802.tscn" id="88_en84g"]
+[ext_resource type="PackedScene" path="res://children/Icon2803.tscn" id="89_f2v8l"]
+[ext_resource type="PackedScene" path="res://children/Icon2804.tscn" id="90_1h5dc"]
+[ext_resource type="PackedScene" path="res://children/Icon2805.tscn" id="91_ub63e"]
+[ext_resource type="PackedScene" path="res://children/Icon2806.tscn" id="92_ybp78"]
+[ext_resource type="PackedScene" path="res://children/Icon2807.tscn" id="93_obcsd"]
+[ext_resource type="PackedScene" path="res://children/Icon2808.tscn" id="94_turlk"]
+[ext_resource type="PackedScene" path="res://children/Icon2809.tscn" id="95_axwfi"]
+[ext_resource type="PackedScene" path="res://children/Icon2810.tscn" id="96_jw8ii"]
+[ext_resource type="PackedScene" path="res://children/Icon2811.tscn" id="97_0kxas"]
+[ext_resource type="PackedScene" path="res://children/Icon2812.tscn" id="98_ubhe4"]
+[ext_resource type="PackedScene" path="res://children/Icon2813.tscn" id="99_jjonx"]
+[ext_resource type="PackedScene" path="res://children/Icon2814.tscn" id="100_wfb8f"]
+[ext_resource type="PackedScene" path="res://children/Icon2815.tscn" id="101_u0psm"]
+[ext_resource type="PackedScene" path="res://children/Icon2816.tscn" id="102_qn6fy"]
+[ext_resource type="PackedScene" path="res://children/Icon2817.tscn" id="103_1kok5"]
+[ext_resource type="PackedScene" path="res://children/Icon2818.tscn" id="104_16kk4"]
+[ext_resource type="PackedScene" path="res://children/Icon2819.tscn" id="105_h0k6a"]
+[ext_resource type="PackedScene" path="res://children/Icon2820.tscn" id="106_87h3q"]
+[ext_resource type="PackedScene" uid="uid://8s46bcjxmibm" path="res://children/Icon2821.tscn" id="107_73u7l"]
+[ext_resource type="PackedScene" path="res://children/Icon2822.tscn" id="108_chal6"]
+[ext_resource type="PackedScene" path="res://children/Icon2823.tscn" id="109_27a8l"]
+[ext_resource type="PackedScene" path="res://children/Icon2824.tscn" id="110_lxoa7"]
+[ext_resource type="PackedScene" path="res://children/Icon2825.tscn" id="111_pyap1"]
+[ext_resource type="PackedScene" path="res://children/Icon2826.tscn" id="112_dtu3r"]
+[ext_resource type="PackedScene" path="res://children/Icon2827.tscn" id="113_b56rk"]
+[ext_resource type="PackedScene" path="res://children/Icon2828.tscn" id="114_iwewq"]
+[ext_resource type="PackedScene" path="res://children/Icon2829.tscn" id="115_tq78x"]
+[ext_resource type="PackedScene" path="res://children/Icon2830.tscn" id="116_vn7e2"]
+[ext_resource type="PackedScene" path="res://children/Icon2831.tscn" id="117_hbj5w"]
+[ext_resource type="PackedScene" path="res://children/Icon2832.tscn" id="118_u7jjt"]
+[ext_resource type="PackedScene" path="res://children/Icon2833.tscn" id="119_km17f"]
+[ext_resource type="PackedScene" path="res://children/Icon2834.tscn" id="120_bhx34"]
+[ext_resource type="PackedScene" path="res://children/Icon2835.tscn" id="121_7sdni"]
+[ext_resource type="PackedScene" path="res://children/Icon2836.tscn" id="122_fcfct"]
+[ext_resource type="PackedScene" path="res://children/Icon2837.tscn" id="123_dtojl"]
+[ext_resource type="PackedScene" path="res://children/Icon2838.tscn" id="124_8ghyt"]
+[ext_resource type="PackedScene" path="res://children/Icon2839.tscn" id="125_3keiw"]
+[ext_resource type="PackedScene" path="res://children/Icon2840.tscn" id="126_d3ulj"]
+[ext_resource type="PackedScene" path="res://children/Icon2901.tscn" id="127_lpt0k"]
+[ext_resource type="PackedScene" path="res://children/Icon2902.tscn" id="128_gkv20"]
+[ext_resource type="PackedScene" path="res://children/Icon2903.tscn" id="129_qaunn"]
+[ext_resource type="PackedScene" path="res://children/Icon2904.tscn" id="130_ttvxn"]
+[ext_resource type="PackedScene" path="res://children/Icon2905.tscn" id="131_o5xcl"]
+[ext_resource type="PackedScene" path="res://children/Icon2906.tscn" id="132_odjq3"]
+[ext_resource type="PackedScene" path="res://children/Icon2907.tscn" id="133_ycqbh"]
+[ext_resource type="PackedScene" path="res://children/Icon2908.tscn" id="134_77fxa"]
+[ext_resource type="PackedScene" path="res://children/Icon2909.tscn" id="135_uhub2"]
+[ext_resource type="PackedScene" path="res://children/Icon2910.tscn" id="136_sotwr"]
+[ext_resource type="PackedScene" path="res://children/Icon2911.tscn" id="137_5wl8f"]
+[ext_resource type="PackedScene" path="res://children/Icon2912.tscn" id="138_h2tar"]
+[ext_resource type="PackedScene" path="res://children/Icon2913.tscn" id="139_11gwl"]
+[ext_resource type="PackedScene" path="res://children/Icon2914.tscn" id="140_7re7y"]
+[ext_resource type="PackedScene" path="res://children/Icon2915.tscn" id="141_55rf1"]
+[ext_resource type="PackedScene" path="res://children/Icon2916.tscn" id="142_dgd8i"]
+[ext_resource type="PackedScene" path="res://children/Icon2917.tscn" id="143_3hmwl"]
+[ext_resource type="PackedScene" path="res://children/Icon2918.tscn" id="144_v7n7i"]
+[ext_resource type="PackedScene" path="res://children/Icon2919.tscn" id="145_xy13n"]
+[ext_resource type="PackedScene" path="res://children/Icon2920.tscn" id="146_5juls"]
+[ext_resource type="PackedScene" path="res://children/Icon2921.tscn" id="147_jrs7g"]
+[ext_resource type="PackedScene" path="res://children/Icon2922.tscn" id="148_r1rs3"]
+[ext_resource type="PackedScene" path="res://children/Icon2923.tscn" id="149_rroyt"]
+[ext_resource type="PackedScene" path="res://children/Icon2924.tscn" id="150_golpo"]
+[ext_resource type="PackedScene" path="res://children/Icon2925.tscn" id="151_ls3np"]
+[ext_resource type="PackedScene" path="res://children/Icon2926.tscn" id="152_cjc1h"]
+[ext_resource type="PackedScene" path="res://children/Icon2927.tscn" id="153_jayvd"]
+[ext_resource type="PackedScene" path="res://children/Icon2928.tscn" id="154_jgqh0"]
+[ext_resource type="PackedScene" path="res://children/Icon2929.tscn" id="155_64hni"]
+[ext_resource type="PackedScene" path="res://children/Icon2930.tscn" id="156_kx845"]
+[ext_resource type="PackedScene" path="res://children/Icon2931.tscn" id="157_q2ca4"]
+[ext_resource type="PackedScene" path="res://children/Icon2932.tscn" id="158_855rr"]
+[ext_resource type="PackedScene" path="res://children/Icon2933.tscn" id="159_1f581"]
+[ext_resource type="PackedScene" path="res://children/Icon2934.tscn" id="160_fksur"]
+[ext_resource type="PackedScene" path="res://children/Icon2935.tscn" id="161_1vo6l"]
+[ext_resource type="PackedScene" path="res://children/Icon2936.tscn" id="162_yp06y"]
+[ext_resource type="PackedScene" path="res://children/Icon2937.tscn" id="163_2kak1"]
+[ext_resource type="PackedScene" path="res://children/Icon2938.tscn" id="164_yi83y"]
+[ext_resource type="PackedScene" path="res://children/Icon2939.tscn" id="165_mkcqo"]
+[ext_resource type="PackedScene" path="res://children/Icon2940.tscn" id="166_gvqo0"]
+[ext_resource type="PackedScene" path="res://children/Icon3001.tscn" id="167_ngao3"]
+[ext_resource type="PackedScene" path="res://children/Icon3002.tscn" id="168_4tp2s"]
+[ext_resource type="PackedScene" path="res://children/Icon3003.tscn" id="169_bmnat"]
+[ext_resource type="PackedScene" path="res://children/Icon3004.tscn" id="170_kdlsj"]
+[ext_resource type="PackedScene" path="res://children/Icon3005.tscn" id="171_hf84h"]
+[ext_resource type="PackedScene" path="res://children/Icon3006.tscn" id="172_aqe17"]
+[ext_resource type="PackedScene" path="res://children/Icon3007.tscn" id="173_hqf0f"]
+[ext_resource type="PackedScene" path="res://children/Icon3008.tscn" id="174_grdah"]
+[ext_resource type="PackedScene" path="res://children/Icon3009.tscn" id="175_ivs1o"]
+[ext_resource type="PackedScene" path="res://children/Icon3010.tscn" id="176_7illt"]
+[ext_resource type="PackedScene" path="res://children/Icon3011.tscn" id="177_gep2h"]
+[ext_resource type="PackedScene" path="res://children/Icon3012.tscn" id="178_qu66j"]
+[ext_resource type="PackedScene" path="res://children/Icon3013.tscn" id="179_m5sff"]
+[ext_resource type="PackedScene" path="res://children/Icon3014.tscn" id="180_gy4id"]
+[ext_resource type="PackedScene" path="res://children/Icon3015.tscn" id="181_a7jkv"]
+[ext_resource type="PackedScene" path="res://children/Icon3016.tscn" id="182_jjmlt"]
+[ext_resource type="PackedScene" path="res://children/Icon3017.tscn" id="183_phh0e"]
+[ext_resource type="PackedScene" path="res://children/Icon3018.tscn" id="184_yj3gk"]
+[ext_resource type="PackedScene" path="res://children/Icon3019.tscn" id="185_u6mh2"]
+[ext_resource type="PackedScene" path="res://children/Icon3020.tscn" id="186_iwkg2"]
+[ext_resource type="PackedScene" path="res://children/Icon3021.tscn" id="187_tr0fr"]
+[ext_resource type="PackedScene" path="res://children/Icon3022.tscn" id="188_n1riu"]
+[ext_resource type="PackedScene" path="res://children/Icon3023.tscn" id="189_42tjm"]
+[ext_resource type="PackedScene" path="res://children/Icon3024.tscn" id="190_dfl5r"]
+[ext_resource type="PackedScene" path="res://children/Icon3025.tscn" id="191_bw5rs"]
+[ext_resource type="PackedScene" path="res://children/Icon3026.tscn" id="192_4wiat"]
+[ext_resource type="PackedScene" path="res://children/Icon3027.tscn" id="193_ash2l"]
+[ext_resource type="PackedScene" path="res://children/Icon3028.tscn" id="194_u0ypa"]
+[ext_resource type="PackedScene" path="res://children/Icon3029.tscn" id="195_bmeey"]
+[ext_resource type="PackedScene" path="res://children/Icon3030.tscn" id="196_8c7ab"]
+[ext_resource type="PackedScene" path="res://children/Icon3031.tscn" id="197_m6y6b"]
+[ext_resource type="PackedScene" path="res://children/Icon3032.tscn" id="198_mtx5a"]
+[ext_resource type="PackedScene" path="res://children/Icon3033.tscn" id="199_frdia"]
+[ext_resource type="PackedScene" path="res://children/Icon3034.tscn" id="200_54jed"]
+[ext_resource type="PackedScene" path="res://children/Icon3035.tscn" id="201_hsh7c"]
+[ext_resource type="PackedScene" path="res://children/Icon3036.tscn" id="202_n66qa"]
+[ext_resource type="PackedScene" path="res://children/Icon3037.tscn" id="203_o5htk"]
+[ext_resource type="PackedScene" path="res://children/Icon3038.tscn" id="204_8lggr"]
+[ext_resource type="PackedScene" path="res://children/Icon3039.tscn" id="205_e5m23"]
+[ext_resource type="PackedScene" path="res://children/Icon3040.tscn" id="206_elde6"]
+[ext_resource type="PackedScene" path="res://children/Lamp1.tscn" id="207_rrxvt"]
+[ext_resource type="PackedScene" path="res://children/Lamp2.tscn" id="208_r2ks2"]
+[ext_resource type="PackedScene" path="res://children/Lamp3.tscn" id="209_yy0wc"]
+[ext_resource type="PackedScene" path="res://children/Lamp4.tscn" id="210_6prbt"]
+[ext_resource type="PackedScene" path="res://children/Lamp5.tscn" id="211_qamny"]
+[ext_resource type="PackedScene" path="res://children/Lamp6.tscn" id="212_mxuvu"]
+[ext_resource type="PackedScene" path="res://children/Land1.tscn" id="213_vufc5"]
+[ext_resource type="PackedScene" path="res://children/Land2.tscn" id="214_wkq55"]
+[ext_resource type="PackedScene" path="res://children/Land3.tscn" id="215_ko34r"]
+[ext_resource type="PackedScene" path="res://children/Land4.tscn" id="216_o7odq"]
+[ext_resource type="PackedScene" path="res://children/Land5.tscn" id="217_sym16"]
+[ext_resource type="PackedScene" path="res://children/Land6.tscn" id="218_sdv73"]
+[ext_resource type="PackedScene" path="res://children/Land7.tscn" id="219_dor3g"]
+[ext_resource type="PackedScene" path="res://children/Land8.tscn" id="220_seqn0"]
+[ext_resource type="PackedScene" path="res://children/Land9.tscn" id="221_irw4d"]
+[ext_resource type="PackedScene" path="res://children/Land10.tscn" id="222_4b2x0"]
+[ext_resource type="PackedScene" path="res://children/Land11.tscn" id="223_qqyo7"]
+[ext_resource type="PackedScene" path="res://children/Land12.tscn" id="224_nia5u"]
+[ext_resource type="PackedScene" path="res://children/Land13.tscn" id="225_opd8m"]
+[ext_resource type="PackedScene" path="res://children/Land14.tscn" id="226_dur2x"]
+[ext_resource type="PackedScene" path="res://children/Land15.tscn" id="227_qrn08"]
+[ext_resource type="PackedScene" path="res://children/Land16.tscn" id="228_8eoir"]
+[ext_resource type="PackedScene" path="res://children/Land17.tscn" id="229_cpk1u"]
+[ext_resource type="PackedScene" path="res://children/Land18.tscn" id="230_jmutj"]
+[ext_resource type="PackedScene" path="res://children/Land19.tscn" id="231_yh5g6"]
+[ext_resource type="PackedScene" path="res://children/Land20.tscn" id="232_erumr"]
+[ext_resource type="PackedScene" path="res://children/Land21.tscn" id="233_q5kgd"]
+[ext_resource type="PackedScene" path="res://children/Land22.tscn" id="234_gkklg"]
+[ext_resource type="PackedScene" path="res://children/Land23.tscn" id="235_akroj"]
+[ext_resource type="PackedScene" path="res://children/Land24.tscn" id="236_n6282"]
+[ext_resource type="PackedScene" path="res://children/Land25.tscn" id="237_lwh6m"]
+[ext_resource type="PackedScene" path="res://children/Land26.tscn" id="238_1feyc"]
+[ext_resource type="PackedScene" path="res://children/Log1.tscn" id="239_71ckt"]
+[ext_resource type="PackedScene" path="res://children/Log2.tscn" id="240_dx2ah"]
+[ext_resource type="PackedScene" path="res://children/Log3.tscn" id="241_rn5k3"]
+[ext_resource type="PackedScene" path="res://children/Log4.tscn" id="242_t7dmh"]
+[ext_resource type="PackedScene" path="res://children/Road1.tscn" id="243_ritjw"]
+[ext_resource type="PackedScene" path="res://children/Road2.tscn" id="244_fjrkq"]
+[ext_resource type="PackedScene" path="res://children/Road3.tscn" id="245_1hs23"]
+[ext_resource type="PackedScene" path="res://children/Road4.tscn" id="246_35cr0"]
+[ext_resource type="PackedScene" path="res://children/Road5.tscn" id="247_ayv3e"]
+[ext_resource type="PackedScene" path="res://children/Road6.tscn" id="248_qsndg"]
+[ext_resource type="PackedScene" path="res://children/Road7.tscn" id="249_6lk8e"]
+[ext_resource type="PackedScene" path="res://children/Road8.tscn" id="250_76les"]
+[ext_resource type="PackedScene" path="res://children/Road9.tscn" id="251_to4nj"]
+[ext_resource type="PackedScene" path="res://children/Road10.tscn" id="252_37fh8"]
+[ext_resource type="PackedScene" path="res://children/Road11.tscn" id="253_2yrrk"]
+[ext_resource type="PackedScene" path="res://children/Road12.tscn" id="254_ixvnm"]
+[ext_resource type="PackedScene" path="res://children/Road13.tscn" id="255_f88l7"]
+[ext_resource type="PackedScene" path="res://children/Road14.tscn" id="256_ldw6n"]
+[ext_resource type="PackedScene" path="res://children/Road15.tscn" id="257_tyunk"]
+[ext_resource type="PackedScene" path="res://children/Road16.tscn" id="258_4qwcm"]
+[ext_resource type="PackedScene" path="res://children/Road17.tscn" id="259_t5oyn"]
+[ext_resource type="PackedScene" path="res://children/Tree1.tscn" id="260_k3dcf"]
+[ext_resource type="PackedScene" path="res://children/Tree2.tscn" id="261_cs3xa"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ceq0m")
+
+[node name="1" parent="." instance=ExtResource("2_b7x5u")]
+
+[node name="2" parent="." instance=ExtResource("3_wt2y4")]
+
+[node name="3" parent="." instance=ExtResource("4_hsu0i")]
+
+[node name="4" parent="." instance=ExtResource("5_0h4vr")]
+
+[node name="5" parent="." instance=ExtResource("6_q4ul5")]
+
+[node name="6" parent="." instance=ExtResource("7_mc2di")]
+
+[node name="7" parent="." instance=ExtResource("8_t8ucl")]
+
+[node name="8" parent="." instance=ExtResource("9_fbmqk")]
+
+[node name="9" parent="." instance=ExtResource("10_q22pr")]
+
+[node name="10" parent="." instance=ExtResource("11_v6s8u")]
+
+[node name="11" parent="." instance=ExtResource("12_q63v8")]
+
+[node name="12" parent="." instance=ExtResource("13_63o6s")]
+
+[node name="13" parent="." instance=ExtResource("14_4i61k")]
+
+[node name="14" parent="." instance=ExtResource("15_3hxdw")]
+
+[node name="15" parent="." instance=ExtResource("16_wwya3")]
+
+[node name="16" parent="." instance=ExtResource("17_q0wtc")]
+
+[node name="17" parent="." instance=ExtResource("18_hbf8g")]
+
+[node name="18" parent="." instance=ExtResource("19_d2k31")]
+
+[node name="19" parent="." instance=ExtResource("20_pdeg4")]
+
+[node name="20" parent="." instance=ExtResource("21_mi1st")]
+
+[node name="21" parent="." instance=ExtResource("22_4n7fs")]
+
+[node name="22" parent="." instance=ExtResource("23_1fih2")]
+
+[node name="23" parent="." instance=ExtResource("24_ncind")]
+
+[node name="24" parent="." instance=ExtResource("25_0e4ai")]
+
+[node name="25" parent="." instance=ExtResource("26_7qng2")]
+
+[node name="26" parent="." instance=ExtResource("27_hof4b")]
+
+[node name="27" parent="." instance=ExtResource("28_ivskh")]
+
+[node name="28" parent="." instance=ExtResource("29_be56b")]
+
+[node name="29" parent="." instance=ExtResource("30_vvori")]
+
+[node name="30" parent="." instance=ExtResource("31_02345")]
+
+[node name="31" parent="." instance=ExtResource("32_ck7i5")]
+
+[node name="32" parent="." instance=ExtResource("33_q6w6j")]
+
+[node name="33" parent="." instance=ExtResource("34_0h1a6")]
+
+[node name="34" parent="." instance=ExtResource("35_qorwg")]
+
+[node name="35" parent="." instance=ExtResource("36_6wp70")]
+
+[node name="36" parent="." instance=ExtResource("37_5dyp7")]
+
+[node name="37" parent="." instance=ExtResource("38_5g4cs")]
+
+[node name="38" parent="." instance=ExtResource("39_3jisd")]
+
+[node name="39" parent="." instance=ExtResource("40_jb5w2")]
+
+[node name="40" parent="." instance=ExtResource("41_46mq3")]
+
+[node name="41" parent="." instance=ExtResource("42_n1sls")]
+
+[node name="42" parent="." instance=ExtResource("43_s1bim")]
+
+[node name="43" parent="." instance=ExtResource("44_fqnuj")]
+
+[node name="44" parent="." instance=ExtResource("45_3brdk")]
+
+[node name="45" parent="." instance=ExtResource("46_2xbn0")]
+
+[node name="46" parent="." instance=ExtResource("47_nwu55")]
+
+[node name="47" parent="." instance=ExtResource("48_u1odj")]
+
+[node name="48" parent="." instance=ExtResource("49_jktql")]
+
+[node name="49" parent="." instance=ExtResource("50_v88m3")]
+
+[node name="50" parent="." instance=ExtResource("51_ha62u")]
+
+[node name="51" parent="." instance=ExtResource("52_74wej")]
+
+[node name="52" parent="." instance=ExtResource("53_amopo")]
+
+[node name="53" parent="." instance=ExtResource("54_3csh8")]
+
+[node name="54" parent="." instance=ExtResource("55_0t4q3")]
+
+[node name="55" parent="." instance=ExtResource("56_mywt0")]
+
+[node name="56" parent="." instance=ExtResource("57_18pgl")]
+
+[node name="57" parent="." instance=ExtResource("58_pls8m")]
+
+[node name="58" parent="." instance=ExtResource("59_welxj")]
+
+[node name="59" parent="." instance=ExtResource("60_xt6vx")]
+
+[node name="60" parent="." instance=ExtResource("61_mseas")]
+
+[node name="61" parent="." instance=ExtResource("62_pbcke")]
+
+[node name="62" parent="." instance=ExtResource("63_6meh2")]
+
+[node name="63" parent="." instance=ExtResource("64_7uoqy")]
+
+[node name="64" parent="." instance=ExtResource("65_janmx")]
+
+[node name="65" parent="." instance=ExtResource("66_ki3t8")]
+
+[node name="66" parent="." instance=ExtResource("67_1tmjw")]
+
+[node name="67" parent="." instance=ExtResource("68_np22n")]
+
+[node name="68" parent="." instance=ExtResource("69_vo75g")]
+
+[node name="69" parent="." instance=ExtResource("70_qfp14")]
+
+[node name="70" parent="." instance=ExtResource("71_v882k")]
+
+[node name="71" parent="." instance=ExtResource("72_ebhe8")]
+
+[node name="72" parent="." instance=ExtResource("73_2hnfh")]
+
+[node name="73" parent="." instance=ExtResource("74_yls14")]
+
+[node name="74" parent="." instance=ExtResource("75_bcq8y")]
+
+[node name="75" parent="." instance=ExtResource("76_ew5hp")]
+
+[node name="Box1" parent="." instance=ExtResource("77_rh112")]
+
+[node name="Box2" parent="." instance=ExtResource("78_dxv7j")]
+
+[node name="Box3" parent="." instance=ExtResource("79_xo0ef")]
+
+[node name="Box4" parent="." instance=ExtResource("80_7ldct")]
+
+[node name="Dirt1" parent="." instance=ExtResource("81_oak5k")]
+
+[node name="Dirt2" parent="." instance=ExtResource("82_lrirv")]
+
+[node name="Dirt3" parent="." instance=ExtResource("83_012hn")]
+
+[node name="Dirt4" parent="." instance=ExtResource("84_7abxd")]
+
+[node name="Dirt5" parent="." instance=ExtResource("85_v0hvt")]
+
+[node name="Dirt6" parent="." instance=ExtResource("86_cqtns")]
+
+[node name="Icon2801" parent="." instance=ExtResource("87_isxxr")]
+
+[node name="Icon2802" parent="." instance=ExtResource("88_en84g")]
+
+[node name="Icon2803" parent="." instance=ExtResource("89_f2v8l")]
+
+[node name="Icon2804" parent="." instance=ExtResource("90_1h5dc")]
+
+[node name="Icon2805" parent="." instance=ExtResource("91_ub63e")]
+
+[node name="Icon2806" parent="." instance=ExtResource("92_ybp78")]
+
+[node name="Icon2807" parent="." instance=ExtResource("93_obcsd")]
+
+[node name="Icon2808" parent="." instance=ExtResource("94_turlk")]
+
+[node name="Icon2809" parent="." instance=ExtResource("95_axwfi")]
+
+[node name="Icon2810" parent="." instance=ExtResource("96_jw8ii")]
+
+[node name="Icon2811" parent="." instance=ExtResource("97_0kxas")]
+
+[node name="Icon2812" parent="." instance=ExtResource("98_ubhe4")]
+
+[node name="Icon2813" parent="." instance=ExtResource("99_jjonx")]
+
+[node name="Icon2814" parent="." instance=ExtResource("100_wfb8f")]
+
+[node name="Icon2815" parent="." instance=ExtResource("101_u0psm")]
+
+[node name="Icon2816" parent="." instance=ExtResource("102_qn6fy")]
+
+[node name="Icon2817" parent="." instance=ExtResource("103_1kok5")]
+
+[node name="Icon2818" parent="." instance=ExtResource("104_16kk4")]
+
+[node name="Icon2819" parent="." instance=ExtResource("105_h0k6a")]
+
+[node name="Icon2820" parent="." instance=ExtResource("106_87h3q")]
+
+[node name="Icon2821" parent="." instance=ExtResource("107_73u7l")]
+
+[node name="Icon2822" parent="." instance=ExtResource("108_chal6")]
+
+[node name="Icon2823" parent="." instance=ExtResource("109_27a8l")]
+
+[node name="Icon2824" parent="." instance=ExtResource("110_lxoa7")]
+
+[node name="Icon2825" parent="." instance=ExtResource("111_pyap1")]
+
+[node name="Icon2826" parent="." instance=ExtResource("112_dtu3r")]
+
+[node name="Icon2827" parent="." instance=ExtResource("113_b56rk")]
+
+[node name="Icon2828" parent="." instance=ExtResource("114_iwewq")]
+
+[node name="Icon2829" parent="." instance=ExtResource("115_tq78x")]
+
+[node name="Icon2830" parent="." instance=ExtResource("116_vn7e2")]
+
+[node name="Icon2831" parent="." instance=ExtResource("117_hbj5w")]
+
+[node name="Icon2832" parent="." instance=ExtResource("118_u7jjt")]
+
+[node name="Icon2833" parent="." instance=ExtResource("119_km17f")]
+
+[node name="Icon2834" parent="." instance=ExtResource("120_bhx34")]
+
+[node name="Icon2835" parent="." instance=ExtResource("121_7sdni")]
+
+[node name="Icon2836" parent="." instance=ExtResource("122_fcfct")]
+
+[node name="Icon2837" parent="." instance=ExtResource("123_dtojl")]
+
+[node name="Icon2838" parent="." instance=ExtResource("124_8ghyt")]
+
+[node name="Icon2839" parent="." instance=ExtResource("125_3keiw")]
+
+[node name="Icon2840" parent="." instance=ExtResource("126_d3ulj")]
+
+[node name="Icon2901" parent="." instance=ExtResource("127_lpt0k")]
+
+[node name="Icon2902" parent="." instance=ExtResource("128_gkv20")]
+
+[node name="Icon2903" parent="." instance=ExtResource("129_qaunn")]
+
+[node name="Icon2904" parent="." instance=ExtResource("130_ttvxn")]
+
+[node name="Icon2905" parent="." instance=ExtResource("131_o5xcl")]
+
+[node name="Icon2906" parent="." instance=ExtResource("132_odjq3")]
+
+[node name="Icon2907" parent="." instance=ExtResource("133_ycqbh")]
+
+[node name="Icon2908" parent="." instance=ExtResource("134_77fxa")]
+
+[node name="Icon2909" parent="." instance=ExtResource("135_uhub2")]
+
+[node name="Icon2910" parent="." instance=ExtResource("136_sotwr")]
+
+[node name="Icon2911" parent="." instance=ExtResource("137_5wl8f")]
+
+[node name="Icon2912" parent="." instance=ExtResource("138_h2tar")]
+
+[node name="Icon2913" parent="." instance=ExtResource("139_11gwl")]
+
+[node name="Icon2914" parent="." instance=ExtResource("140_7re7y")]
+
+[node name="Icon2915" parent="." instance=ExtResource("141_55rf1")]
+
+[node name="Icon2916" parent="." instance=ExtResource("142_dgd8i")]
+
+[node name="Icon2917" parent="." instance=ExtResource("143_3hmwl")]
+
+[node name="Icon2918" parent="." instance=ExtResource("144_v7n7i")]
+
+[node name="Icon2919" parent="." instance=ExtResource("145_xy13n")]
+
+[node name="Icon2920" parent="." instance=ExtResource("146_5juls")]
+
+[node name="Icon2921" parent="." instance=ExtResource("147_jrs7g")]
+
+[node name="Icon2922" parent="." instance=ExtResource("148_r1rs3")]
+
+[node name="Icon2923" parent="." instance=ExtResource("149_rroyt")]
+
+[node name="Icon2924" parent="." instance=ExtResource("150_golpo")]
+
+[node name="Icon2925" parent="." instance=ExtResource("151_ls3np")]
+
+[node name="Icon2926" parent="." instance=ExtResource("152_cjc1h")]
+
+[node name="Icon2927" parent="." instance=ExtResource("153_jayvd")]
+
+[node name="Icon2928" parent="." instance=ExtResource("154_jgqh0")]
+
+[node name="Icon2929" parent="." instance=ExtResource("155_64hni")]
+
+[node name="Icon2930" parent="." instance=ExtResource("156_kx845")]
+
+[node name="Icon2931" parent="." instance=ExtResource("157_q2ca4")]
+
+[node name="Icon2932" parent="." instance=ExtResource("158_855rr")]
+
+[node name="Icon2933" parent="." instance=ExtResource("159_1f581")]
+
+[node name="Icon2934" parent="." instance=ExtResource("160_fksur")]
+
+[node name="Icon2935" parent="." instance=ExtResource("161_1vo6l")]
+
+[node name="Icon2936" parent="." instance=ExtResource("162_yp06y")]
+
+[node name="Icon2937" parent="." instance=ExtResource("163_2kak1")]
+
+[node name="Icon2938" parent="." instance=ExtResource("164_yi83y")]
+
+[node name="Icon2939" parent="." instance=ExtResource("165_mkcqo")]
+
+[node name="Icon2940" parent="." instance=ExtResource("166_gvqo0")]
+
+[node name="Icon3001" parent="." instance=ExtResource("167_ngao3")]
+
+[node name="Icon3002" parent="." instance=ExtResource("168_4tp2s")]
+
+[node name="Icon3003" parent="." instance=ExtResource("169_bmnat")]
+
+[node name="Icon3004" parent="." instance=ExtResource("170_kdlsj")]
+
+[node name="Icon3005" parent="." instance=ExtResource("171_hf84h")]
+
+[node name="Icon3006" parent="." instance=ExtResource("172_aqe17")]
+
+[node name="Icon3007" parent="." instance=ExtResource("173_hqf0f")]
+
+[node name="Icon3008" parent="." instance=ExtResource("174_grdah")]
+
+[node name="Icon3009" parent="." instance=ExtResource("175_ivs1o")]
+
+[node name="Icon3010" parent="." instance=ExtResource("176_7illt")]
+
+[node name="Icon3011" parent="." instance=ExtResource("177_gep2h")]
+
+[node name="Icon3012" parent="." instance=ExtResource("178_qu66j")]
+
+[node name="Icon3013" parent="." instance=ExtResource("179_m5sff")]
+
+[node name="Icon3014" parent="." instance=ExtResource("180_gy4id")]
+
+[node name="Icon3015" parent="." instance=ExtResource("181_a7jkv")]
+
+[node name="Icon3016" parent="." instance=ExtResource("182_jjmlt")]
+
+[node name="Icon3017" parent="." instance=ExtResource("183_phh0e")]
+
+[node name="Icon3018" parent="." instance=ExtResource("184_yj3gk")]
+
+[node name="Icon3019" parent="." instance=ExtResource("185_u6mh2")]
+
+[node name="Icon3020" parent="." instance=ExtResource("186_iwkg2")]
+
+[node name="Icon3021" parent="." instance=ExtResource("187_tr0fr")]
+
+[node name="Icon3022" parent="." instance=ExtResource("188_n1riu")]
+
+[node name="Icon3023" parent="." instance=ExtResource("189_42tjm")]
+
+[node name="Icon3024" parent="." instance=ExtResource("190_dfl5r")]
+
+[node name="Icon3025" parent="." instance=ExtResource("191_bw5rs")]
+
+[node name="Icon3026" parent="." instance=ExtResource("192_4wiat")]
+
+[node name="Icon3027" parent="." instance=ExtResource("193_ash2l")]
+
+[node name="Icon3028" parent="." instance=ExtResource("194_u0ypa")]
+
+[node name="Icon3029" parent="." instance=ExtResource("195_bmeey")]
+
+[node name="Icon3030" parent="." instance=ExtResource("196_8c7ab")]
+
+[node name="Icon3031" parent="." instance=ExtResource("197_m6y6b")]
+
+[node name="Icon3032" parent="." instance=ExtResource("198_mtx5a")]
+
+[node name="Icon3033" parent="." instance=ExtResource("199_frdia")]
+
+[node name="Icon3034" parent="." instance=ExtResource("200_54jed")]
+
+[node name="Icon3035" parent="." instance=ExtResource("201_hsh7c")]
+
+[node name="Icon3036" parent="." instance=ExtResource("202_n66qa")]
+
+[node name="Icon3037" parent="." instance=ExtResource("203_o5htk")]
+
+[node name="Icon3038" parent="." instance=ExtResource("204_8lggr")]
+
+[node name="Icon3039" parent="." instance=ExtResource("205_e5m23")]
+
+[node name="Icon3040" parent="." instance=ExtResource("206_elde6")]
+
+[node name="Lamp1" parent="." instance=ExtResource("207_rrxvt")]
+
+[node name="Lamp2" parent="." instance=ExtResource("208_r2ks2")]
+
+[node name="Lamp3" parent="." instance=ExtResource("209_yy0wc")]
+
+[node name="Lamp4" parent="." instance=ExtResource("210_6prbt")]
+
+[node name="Lamp5" parent="." instance=ExtResource("211_qamny")]
+
+[node name="Lamp6" parent="." instance=ExtResource("212_mxuvu")]
+
+[node name="Land1" parent="." instance=ExtResource("213_vufc5")]
+
+[node name="Land2" parent="." instance=ExtResource("214_wkq55")]
+
+[node name="Land3" parent="." instance=ExtResource("215_ko34r")]
+
+[node name="Land4" parent="." instance=ExtResource("216_o7odq")]
+
+[node name="Land5" parent="." instance=ExtResource("217_sym16")]
+
+[node name="Land6" parent="." instance=ExtResource("218_sdv73")]
+
+[node name="Land7" parent="." instance=ExtResource("219_dor3g")]
+
+[node name="Land8" parent="." instance=ExtResource("220_seqn0")]
+
+[node name="Land9" parent="." instance=ExtResource("221_irw4d")]
+
+[node name="Land10" parent="." instance=ExtResource("222_4b2x0")]
+
+[node name="Land11" parent="." instance=ExtResource("223_qqyo7")]
+
+[node name="Land12" parent="." instance=ExtResource("224_nia5u")]
+
+[node name="Land13" parent="." instance=ExtResource("225_opd8m")]
+
+[node name="Land14" parent="." instance=ExtResource("226_dur2x")]
+
+[node name="Land15" parent="." instance=ExtResource("227_qrn08")]
+
+[node name="Land16" parent="." instance=ExtResource("228_8eoir")]
+
+[node name="Land17" parent="." instance=ExtResource("229_cpk1u")]
+
+[node name="Land18" parent="." instance=ExtResource("230_jmutj")]
+
+[node name="Land19" parent="." instance=ExtResource("231_yh5g6")]
+
+[node name="Land20" parent="." instance=ExtResource("232_erumr")]
+
+[node name="Land21" parent="." instance=ExtResource("233_q5kgd")]
+
+[node name="Land22" parent="." instance=ExtResource("234_gkklg")]
+
+[node name="Land23" parent="." instance=ExtResource("235_akroj")]
+
+[node name="Land24" parent="." instance=ExtResource("236_n6282")]
+
+[node name="Land25" parent="." instance=ExtResource("237_lwh6m")]
+
+[node name="Land26" parent="." instance=ExtResource("238_1feyc")]
+
+[node name="Log1" parent="." instance=ExtResource("239_71ckt")]
+
+[node name="Log2" parent="." instance=ExtResource("240_dx2ah")]
+
+[node name="Log3" parent="." instance=ExtResource("241_rn5k3")]
+
+[node name="Log4" parent="." instance=ExtResource("242_t7dmh")]
+
+[node name="Road1" parent="." instance=ExtResource("243_ritjw")]
+
+[node name="Road2" parent="." instance=ExtResource("244_fjrkq")]
+
+[node name="Road3" parent="." instance=ExtResource("245_1hs23")]
+
+[node name="Road4" parent="." instance=ExtResource("246_35cr0")]
+
+[node name="Road5" parent="." instance=ExtResource("247_ayv3e")]
+
+[node name="Road6" parent="." instance=ExtResource("248_qsndg")]
+
+[node name="Road7" parent="." instance=ExtResource("249_6lk8e")]
+
+[node name="Road8" parent="." instance=ExtResource("250_76les")]
+
+[node name="Road9" parent="." instance=ExtResource("251_to4nj")]
+
+[node name="Road10" parent="." instance=ExtResource("252_37fh8")]
+
+[node name="Road11" parent="." instance=ExtResource("253_2yrrk")]
+
+[node name="Road12" parent="." instance=ExtResource("254_ixvnm")]
+
+[node name="Road13" parent="." instance=ExtResource("255_f88l7")]
+
+[node name="Road14" parent="." instance=ExtResource("256_ldw6n")]
+
+[node name="Road15" parent="." instance=ExtResource("257_tyunk")]
+
+[node name="Road16" parent="." instance=ExtResource("258_4qwcm")]
+
+[node name="Road17" parent="." instance=ExtResource("259_t5oyn")]
+
+[node name="Tree1" parent="." instance=ExtResource("260_k3dcf")]
+
+[node name="Tree2" parent="." instance=ExtResource("261_cs3xa")]
