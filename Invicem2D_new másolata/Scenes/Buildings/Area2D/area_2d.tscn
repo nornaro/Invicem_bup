@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b365gc0lijb6r"]
+
+[ext_resource type="Script" uid="uid://bgmsoje2ymtvx" path="res://Scenes/Buildings/Area2D/area_2d.gd" id="1_fhnxi"]
+
+[node name="Area" type="Area2D" groups=["building"]]
+script = ExtResource("1_fhnxi")
+
+[node name="Shape" type="CollisionShape2D" parent="."]

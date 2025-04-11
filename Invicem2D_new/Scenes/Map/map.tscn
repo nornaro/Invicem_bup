@@ -1,0 +1,230 @@
+[gd_scene load_steps=27 format=3 uid="uid://c4ma53dgi0oje"]
+
+[ext_resource type="Script" uid="uid://mn612ovgeogq" path="res://Scenes/Map/map.gd" id="1_0bqwf"]
+[ext_resource type="PackedScene" uid="uid://cbm6uy5irqlad" path="res://Scenes/Map/Ground/ground.tscn" id="2_m0gtq"]
+[ext_resource type="PackedScene" uid="uid://buq6q3rkgcyaa" path="res://Scenes/Map/Spawn/spawn.tscn" id="3_sk368"]
+[ext_resource type="PackedScene" uid="uid://cq13xgootxplk" path="res://Scenes/Map/In/in.tscn" id="4_65k1d"]
+[ext_resource type="PackedScene" uid="uid://iwp2p55pke5x" path="res://Scenes/Map/Out/out.tscn" id="5_oy5h8"]
+[ext_resource type="Script" uid="uid://col4cvc855xl0" path="res://addons/astar2d_grid_node/astar2d_grid_node.gd" id="6_sosc1"]
+[ext_resource type="PackedScene" uid="uid://c34xvf4i48axf" path="res://Scenes/Map/Selection/selection_rectangle.tscn" id="7_v3nu7"]
+[ext_resource type="PackedScene" uid="uid://b2qsbye225y0r" path="res://Scenes/Map/Road/road.tscn" id="9_qu23i"]
+
+[sub_resource type="Gradient" id="Gradient_xklc3"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_8k5ns"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_g15sm"]
+color_ramp = SubResource("Gradient_xklc3")
+noise = SubResource("FastNoiseLite_8k5ns")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_arwk6"]
+transparency = 1
+albedo_color = Color(0, 0, 0, 1)
+albedo_texture = SubResource("NoiseTexture2D_g15sm")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_14282"]
+material = SubResource("StandardMaterial3D_arwk6")
+size = Vector2(3000, 2000)
+orientation = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0m5dk"]
+size = Vector2(1700, 1000)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qo1ir"]
+size = Vector2(2550, 500)
+orientation = 2
+
+[sub_resource type="Gradient" id="Gradient_hwrr3"]
+offsets = PackedFloat32Array()
+colors = PackedColorArray()
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_iuac6"]
+gradient = SubResource("Gradient_hwrr3")
+fill = 2
+fill_to = Vector2(1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_k2lll"]
+size = Vector2(525, 850)
+orientation = 2
+
+[sub_resource type="Gradient" id="Gradient_hgl52"]
+offsets = PackedFloat32Array(0.764901, 1)
+colors = PackedColorArray(0.196078, 0.196078, 0.196078, 0, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ams2i"]
+gradient = SubResource("Gradient_hgl52")
+fill = 2
+fill_from = Vector2(0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_w6qxr"]
+size = Vector2(525, 1700)
+orientation = 2
+
+[sub_resource type="Gradient" id="Gradient_eqg5f"]
+offsets = PackedFloat32Array(0.764901, 1)
+colors = PackedColorArray(0.196078, 0.196078, 0.196078, 0, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_nxbs3"]
+gradient = SubResource("Gradient_eqg5f")
+fill = 2
+fill_from = Vector2(1, 1)
+fill_to = Vector2(0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_56g4k"]
+gradient = SubResource("Gradient_eqg5f")
+fill = 2
+fill_to = Vector2(1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8twsw"]
+size = Vector2(2000, 750)
+orientation = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8mbnc"]
+size = Vector2(2000, 750)
+orientation = 2
+
+[node name="Map" type="Node2D"]
+z_index = -4096
+script = ExtResource("1_0bqwf")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_14282")
+
+[node name="Ground" parent="." instance=ExtResource("2_m0gtq")]
+collision_layer = 2147483657
+collision_mask = 9
+
+[node name="CollisionShape2D" parent="Ground" index="0"]
+shape = SubResource("RectangleShape2D_0m5dk")
+
+[node name="MeshInstance2D15" type="MeshInstance2D" parent="."]
+visible = false
+show_behind_parent = true
+position = Vector2(-17, -11)
+rotation = 1.5708
+mesh = SubResource("PlaneMesh_qo1ir")
+texture = SubResource("GradientTexture2D_iuac6")
+
+[node name="Spawn" parent="." instance=ExtResource("3_sk368")]
+position = Vector2(-300, 0)
+
+[node name="Positions" parent="Spawn" index="0"]
+position = Vector2(0, 0)
+
+[node name="In" parent="." groups=["In"] instance=ExtResource("4_65k1d")]
+visible = false
+position = Vector2(1704, 0)
+
+[node name="Out" parent="." groups=["Out"] instance=ExtResource("5_oy5h8")]
+visible = false
+
+[node name="Top" type="Node2D" parent="."]
+visible = false
+position = Vector2(-800, -450)
+script = ExtResource("6_sosc1")
+grid_size = Vector2i(65, 14)
+cell_size = Vector2(25, 25)
+
+[node name="Bot" type="Node2D" parent="."]
+visible = false
+position = Vector2(-800, 130)
+script = ExtResource("6_sosc1")
+grid_size = Vector2i(65, 14)
+cell_size = Vector2(25, 25)
+
+[node name="SelectionRectangle" parent="." instance=ExtResource("7_v3nu7")]
+visible = false
+
+[node name="Fill" parent="SelectionRectangle" index="1"]
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D10" type="MeshInstance2D" parent="."]
+top_level = true
+z_index = 4096
+position = Vector2(-425, 263)
+rotation = 1.5708
+mesh = SubResource("PlaneMesh_k2lll")
+texture = SubResource("GradientTexture2D_ams2i")
+
+[node name="MeshInstance2D11" type="MeshInstance2D" parent="."]
+top_level = true
+z_index = 4096
+position = Vector2(850, -263)
+rotation = -1.5708
+mesh = SubResource("PlaneMesh_w6qxr")
+texture = SubResource("GradientTexture2D_ams2i")
+
+[node name="MeshInstance2D12" type="MeshInstance2D" parent="."]
+top_level = true
+z_index = 4096
+position = Vector2(-425, -262)
+rotation = 1.5708
+mesh = SubResource("PlaneMesh_k2lll")
+texture = SubResource("GradientTexture2D_nxbs3")
+
+[node name="MeshInstance2D13" type="MeshInstance2D" parent="."]
+top_level = true
+z_index = 4096
+position = Vector2(850, 262)
+rotation = 1.5708
+mesh = SubResource("PlaneMesh_w6qxr")
+texture = SubResource("GradientTexture2D_56g4k")
+
+[node name="MeshInstance2D14" type="MeshInstance2D" parent="."]
+visible = false
+show_behind_parent = true
+top_level = true
+position = Vector2(1225, 0)
+rotation = 1.5708
+mesh = SubResource("PlaneMesh_8twsw")
+texture = SubResource("GradientTexture2D_iuac6")
+
+[node name="MeshInstance2D16" type="MeshInstance2D" parent="."]
+show_behind_parent = true
+top_level = true
+z_index = 4096
+position = Vector2(-1758.97, -0.00193296)
+rotation = 1.5708
+scale = Vector2(1, 2.42392)
+mesh = SubResource("PlaneMesh_8mbnc")
+texture = SubResource("GradientTexture2D_iuac6")
+
+[node name="MeshInstance2D19" type="MeshInstance2D" parent="."]
+show_behind_parent = true
+top_level = true
+z_index = 4096
+position = Vector2(2075, 0)
+rotation = 1.5708
+mesh = SubResource("PlaneMesh_8mbnc")
+texture = SubResource("GradientTexture2D_iuac6")
+
+[node name="MeshInstance2D17" type="MeshInstance2D" parent="."]
+show_behind_parent = true
+top_level = true
+z_index = 4096
+position = Vector2(425, 775)
+mesh = SubResource("PlaneMesh_qo1ir")
+texture = SubResource("GradientTexture2D_iuac6")
+
+[node name="MeshInstance2D18" type="MeshInstance2D" parent="."]
+show_behind_parent = true
+top_level = true
+z_index = 4096
+position = Vector2(425, -775)
+mesh = SubResource("PlaneMesh_qo1ir")
+texture = SubResource("GradientTexture2D_iuac6")
+
+[node name="Road" parent="." instance=ExtResource("9_qu23i")]
+
+[node name="CollisionShape2D" parent="Road" index="0"]
+position = Vector2(468.5, 0)
+
+[connection signal="area_entered" from="Out" to="." method="_on_out_area_entered"]
+
+[editable path="Ground"]
+[editable path="Spawn"]
+[editable path="In"]
+[editable path="Out"]
+[editable path="SelectionRectangle"]
+[editable path="Road"]

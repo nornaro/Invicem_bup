@@ -1,0 +1,201 @@
+[gd_scene load_steps=14 format=3 uid="uid://bixue4nofvcvp"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_6nmwn"]
+[ext_resource type="PackedScene" uid="uid://by3f5o7dyoqx4" path="res://world.tscn" id="1_m45k2"]
+[ext_resource type="PackedScene" uid="uid://cc0ydwynog0pq" path="res://scenes/UI/menu_bar.tscn" id="3_q1q3s"]
+[ext_resource type="Script" path="res://players.gd" id="3_ttsjy"]
+[ext_resource type="PackedScene" uid="uid://cg2a77ksf7ulj" path="res://scenes/UI/info_bar.tscn" id="5_4w4jf"]
+[ext_resource type="Script" path="res://network.gd" id="6_cehws"]
+[ext_resource type="Script" path="res://mphud.gd" id="7_gykkm"]
+[ext_resource type="Texture2D" uid="uid://b6df3s07m2c47" path="res://GDSync.png" id="7_qvkat"]
+[ext_resource type="Texture2D" uid="uid://bphqhca08nc0v" path="res://Steam.png" id="8_8unw1"]
+[ext_resource type="Texture2D" uid="uid://cunx871fhd26u" path="res://godot.png" id="8_q88i6"]
+[ext_resource type="Texture2D" uid="uid://ctanmg7dnvwju" path="res://Nakama.png" id="9_j4c50"]
+[ext_resource type="Texture2D" uid="uid://dk6d26x05n6qp" path="res://EOSG.png" id="11_nfn0e"]
+
+[sub_resource type="GDScript" id="GDScript_ppauv"]
+script/source = "extends TabBar
+"
+
+[node name="Main" type="Node"]
+script = ExtResource("1_6nmwn")
+
+[node name="World" parent="." instance=ExtResource("1_m45k2")]
+
+[node name="Players" type="MultiplayerSpawner" parent="." groups=["Players"]]
+unique_name_in_owner = true
+_spawnable_scenes = PackedStringArray("res://scenes/Player/mp_player.tscn")
+spawn_path = NodePath(".")
+script = ExtResource("3_ttsjy")
+
+[node name="InfoBar" parent="." instance=ExtResource("5_4w4jf")]
+unique_name_in_owner = true
+visible = false
+
+[node name="MenuBar" parent="." instance=ExtResource("3_q1q3s")]
+unique_name_in_owner = true
+visible = false
+
+[node name="Network" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+script = ExtResource("6_cehws")
+
+[node name="MPHUD" type="Panel" parent="Network" groups=["MPHUD"]]
+unique_name_in_owner = true
+light_mask = 2
+visibility_layer = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("7_gykkm")
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Network/MPHUD"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+split_offset = 300
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Network/MPHUD/HSplitContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="Network/MPHUD/HSplitContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Network/MPHUD/HSplitContainer/VBoxContainer2/Control"]
+layout_mode = 2
+offset_right = 300.0
+offset_bottom = 648.0
+
+[node name="TabBar" type="TabBar" parent="Network/MPHUD/HSplitContainer/VBoxContainer2/Control/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+current_tab = 0
+tab_alignment = 1
+scrolling_enabled = false
+tab_count = 5
+tab_0/icon = ExtResource("8_q88i6")
+tab_1/icon = ExtResource("8_8unw1")
+tab_2/icon = ExtResource("9_j4c50")
+tab_2/disabled = true
+tab_3/icon = ExtResource("7_qvkat")
+tab_3/disabled = true
+tab_4/icon = ExtResource("11_nfn0e")
+tab_4/disabled = true
+script = SubResource("GDScript_ppauv")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Network/MPHUD/HSplitContainer/VBoxContainer2/Control/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Panel" type="Panel" parent="Network/MPHUD/HSplitContainer/VBoxContainer2/Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Network/MPHUD/HSplitContainer/VBoxContainer2/Control/VBoxContainer/HBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -22.0
+offset_top = -21.5
+offset_right = 22.0
+offset_bottom = 21.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Name" type="RichTextLabel" parent="Network/MPHUD/HSplitContainer/VBoxContainer2/Control/VBoxContainer/HBoxContainer/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+bbcode_enabled = true
+text = "Name"
+fit_content = true
+scroll_active = false
+
+[node name="Host" type="Button" parent="Network/MPHUD/HSplitContainer/VBoxContainer2/Control/VBoxContainer/HBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+text = "Host"
+
+[node name="Join" type="Button" parent="Network/MPHUD/HSplitContainer/VBoxContainer2/Control/VBoxContainer/HBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+text = "Join"
+
+[node name="Search" type="TextEdit" parent="Network/MPHUD/HSplitContainer/VBoxContainer2/Control/VBoxContainer/HBoxContainer/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+placeholder_text = "Name/ID Search"
+context_menu_enabled = false
+scroll_fit_content_height = true
+
+[node name="Control" type="Control" parent="Network/MPHUD/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Lobby" type="Panel" parent="Network/MPHUD/HSplitContainer/Control"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 60.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Lobbyinfo" type="ItemList" parent="Network/MPHUD/HSplitContainer/Control/Lobby"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 150.0
+grow_vertical = 2
+size_flags_horizontal = 3
+allow_search = false
+
+[node name="LobbyName" type="ItemList" parent="Network/MPHUD/HSplitContainer/Control/Lobby"]
+custom_minimum_size = Vector2(450, 0)
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 150.0
+offset_right = 450.0
+grow_vertical = 2
+size_flags_horizontal = 3
+
+[node name="LobbyPlayers" type="ItemList" parent="Network/MPHUD/HSplitContainer/Control/Lobby"]
+clip_contents = false
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 180.0
+offset_right = 210.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+
+[node name="LobbyId" type="ItemList" parent="Network/MPHUD/HSplitContainer/Control/Lobby"]
+layout_mode = 2
+offset_left = 630.0
+offset_right = 840.0
+offset_bottom = 588.0
+size_flags_horizontal = 3
+
+[connection signal="tab_changed" from="Network/MPHUD/HSplitContainer/VBoxContainer2/Control/VBoxContainer/TabBar" to="Network" method="_on_tab_bar_tab_changed"]
+[connection signal="pressed" from="Network/MPHUD/HSplitContainer/VBoxContainer2/Control/VBoxContainer/HBoxContainer/Panel/VBoxContainer/Host" to="Network" method="_on_host_pressed"]
+[connection signal="pressed" from="Network/MPHUD/HSplitContainer/VBoxContainer2/Control/VBoxContainer/HBoxContainer/Panel/VBoxContainer/Join" to="Network" method="_on_join_pressed"]

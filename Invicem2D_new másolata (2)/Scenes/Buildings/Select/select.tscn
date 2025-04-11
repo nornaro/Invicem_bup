@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bydkjmor6dd4g"]
+
+[sub_resource type="Curve" id="Curve_y1msb"]
+
+[sub_resource type="Gradient" id="Gradient_b4rhk"]
+colors = PackedColorArray(0, 1, 0, 1, 1, 1, 0, 1)
+
+[sub_resource type="Gradient" id="Gradient_vhxtt"]
+colors = PackedColorArray(1, 0, 0, 1, 1, 1, 0, 1)
+
+[node name="Select" type="Node2D"]
+
+[node name="green" type="Line2D" parent="."]
+points = PackedVector2Array(10, 0, 10, 10, 0, 10, 0, 0)
+width = 5.0
+width_curve = SubResource("Curve_y1msb")
+default_color = Color(0, 0.490196, 0, 1)
+gradient = SubResource("Gradient_b4rhk")
+joint_mode = 1
+
+[node name="red" type="Line2D" parent="."]
+points = PackedVector2Array(10, 0, 10, 10, 0, 10, 0, 0)
+width = 5.0
+width_curve = SubResource("Curve_y1msb")
+default_color = Color(1, 0, 0, 1)
+gradient = SubResource("Gradient_vhxtt")
+joint_mode = 1

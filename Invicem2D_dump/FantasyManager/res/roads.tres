@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://doxpfq4lgib1r"]
+
+[ext_resource type="Texture2D" uid="uid://dr2oifpa2po0b" path="res://res/Tarmac 0204.jpg" id="1_f3x6b"]
+
+[resource]
+albedo_texture = ExtResource("1_f3x6b")
+uv1_triplanar = true
+uv1_world_triplanar = true

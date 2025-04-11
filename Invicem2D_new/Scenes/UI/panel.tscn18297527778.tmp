@@ -1,0 +1,57 @@
+[gd_scene load_steps=11 format=3 uid="uid://bq6obs6f5somh"]
+
+[ext_resource type="Script" uid="uid://vryns3vvacdp" path="res://Scenes/UI/panel.gd" id="1_tw6yc"]
+[ext_resource type="PackedScene" uid="uid://cd65fylu8cqtu" path="res://Scenes/UI/image_panel.tscn" id="2_t5r24"]
+[ext_resource type="PackedScene" uid="uid://dgawlysyjcr1s" path="res://Scenes/UI/info_panels.tscn" id="3_t5r24"]
+[ext_resource type="PackedScene" uid="uid://t5s36h6pjarw" path="res://Scenes/UI/equip_slots.tscn" id="4_piq27"]
+[ext_resource type="PackedScene" uid="uid://dn6v8r655ofp5" path="res://Scenes/UI/inventory_slots.tscn" id="5_22dm5"]
+[ext_resource type="PackedScene" uid="uid://46js3jynavty" path="res://Scenes/UI/property_menu.tscn" id="6_elrdb"]
+[ext_resource type="PackedScene" uid="uid://c8pgtbi1yllmm" path="res://Scenes/UI/upgrades_panel.tscn" id="7_hcadf"]
+
+[sub_resource type="Gradient" id="Gradient_h6tq4"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 0.4)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_t7te2"]
+gradient = SubResource("Gradient_h6tq4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_56q1t"]
+texture = SubResource("GradientTexture1D_t7te2")
+
+[node name="Panel" type="Panel"]
+custom_minimum_size = Vector2(0, 150)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -150.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxTexture_56q1t")
+script = ExtResource("1_tw6yc")
+
+[node name="ImagePanel" parent="." instance=ExtResource("2_t5r24")]
+layout_mode = 0
+
+[node name="InfoPanels" parent="." instance=ExtResource("3_t5r24")]
+layout_mode = 0
+
+[node name="EquipSlots" parent="." instance=ExtResource("4_piq27")]
+layout_mode = 0
+
+[node name="InventorySlots" parent="." instance=ExtResource("5_22dm5")]
+layout_mode = 0
+
+[node name="PropertyMenu" parent="." instance=ExtResource("6_elrdb")]
+layout_mode = 0
+
+[node name="UpgradesPanel" parent="." instance=ExtResource("7_hcadf")]
+layout_mode = 0
+
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]
+[connection signal="focus_exited" from="." to="." method="_on_focus_exited"]
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

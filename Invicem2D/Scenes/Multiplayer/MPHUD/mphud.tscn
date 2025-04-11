@@ -1,0 +1,264 @@
+[gd_scene load_steps=20 format=3 uid="uid://bp18rk6u47rpe"]
+
+[ext_resource type="Script" uid="uid://dq54ywl2p58gl" path="res://Scenes/Multiplayer/MPHUD/mphud.gd" id="1_bw4dg"]
+[ext_resource type="Texture2D" uid="uid://bwv0kw1cjln4h" path="res://Scenes/Multiplayer/Network/Godot/icon.webp" id="2_mhrge"]
+[ext_resource type="Texture2D" uid="uid://criqhyhlt2khv" path="res://Scenes/Multiplayer/Network/Steam/icon.webp" id="3_5q074"]
+[ext_resource type="Texture2D" uid="uid://bhpvhv04ck8x1" path="res://Scenes/Multiplayer/Network/WebSocket/icon.webp" id="3_xyki0"]
+[ext_resource type="Texture2D" uid="uid://c3maaws5wce35" path="res://Scenes/Multiplayer/Network/Nakama/icon.webp" id="4_yrhr7"]
+[ext_resource type="Texture2D" uid="uid://3cdkwk5o1bkw" path="res://Scenes/Multiplayer/Network/GDSync/icon.webp" id="5_7v3yp"]
+[ext_resource type="Texture2D" uid="uid://b437t7wfu0lg1" path="res://Scenes/Multiplayer/Network/EPIC/icon.webp" id="6_rtfh4"]
+[ext_resource type="Texture2D" uid="uid://brjuv0thafsk0" path="res://Scenes/Multiplayer/Network/W4Games/icon.webp" id="7_2pc1p"]
+[ext_resource type="Script" uid="uid://ml32sxxxhqm4" path="res://Scenes/Multiplayer/MPHUD/network_type.gd" id="7_pnjyg"]
+[ext_resource type="Script" uid="uid://bdmpj60vca0tf" path="res://Scenes/Multiplayer/host.gd" id="8_ttryd"]
+[ext_resource type="Texture2D" uid="uid://cr7kt2fkd6bjc" path="res://Scenes/Multiplayer/Network/JamLaunch/icon.webp" id="8_xyki0"]
+[ext_resource type="Texture2D" uid="uid://dhqj3yymyujdk" path="res://Scenes/Multiplayer/Network/HIGHT/icon.webp" id="9_2pc1p"]
+[ext_resource type="Script" uid="uid://ck3ga2ab57mmj" path="res://Scenes/Multiplayer/join.gd" id="9_f4ja4"]
+[ext_resource type="Script" uid="uid://dk340raasgcv0" path="res://Scenes/Multiplayer/search.gd" id="10_tyone"]
+[ext_resource type="Texture2D" uid="uid://1n5g1w4c7xr3" path="res://Scenes/Multiplayer/Network/Colyseus/icon.webp" id="11_ked6n"]
+[ext_resource type="Script" uid="uid://ddj0pg64e3p0b" path="res://Scenes/Multiplayer/MPHUD/back.gd" id="11_tsjd1"]
+[ext_resource type="Script" uid="uid://csoxvgd1w5uwn" path="res://Scenes/Multiplayer/MPHUD/lobby.gd" id="12_emtdj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l4wgv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7v4l0"]
+bg_color = Color(0.0475577, 0.0475577, 0.0475576, 1)
+
+[node name="MPHUD" type="Panel" groups=["MPHUD", "MainCircle"]]
+light_mask = 2
+visibility_layer = 2
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -900.0
+offset_top = -500.0
+offset_right = 900.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bw4dg")
+
+[node name="LobbyControl" type="VBoxContainer" parent="."]
+layout_mode = 2
+offset_right = 288.0
+offset_bottom = 1000.0
+
+[node name="Top" type="VBoxContainer" parent="LobbyControl"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="NetworkType" type="TabBar" parent="LobbyControl/Top"]
+unique_name_in_owner = true
+layout_mode = 2
+current_tab = 0
+tab_alignment = 1
+tab_count = 10
+tab_0/tooltip = "ENet"
+tab_0/icon = ExtResource("2_mhrge")
+tab_1/tooltip = "Websocket"
+tab_1/icon = ExtResource("3_xyki0")
+tab_2/tooltip = "Steam"
+tab_2/icon = ExtResource("3_5q074")
+tab_3/tooltip = "Nakama"
+tab_3/icon = ExtResource("4_yrhr7")
+tab_3/disabled = true
+tab_4/tooltip = "GDSync"
+tab_4/icon = ExtResource("5_7v3yp")
+tab_4/disabled = true
+tab_5/tooltip = "Epic"
+tab_5/icon = ExtResource("6_rtfh4")
+tab_5/disabled = true
+tab_6/tooltip = "W4"
+tab_6/icon = ExtResource("7_2pc1p")
+tab_6/disabled = true
+tab_7/tooltip = "Jam"
+tab_7/icon = ExtResource("8_xyki0")
+tab_7/disabled = true
+tab_8/tooltip = "Hight"
+tab_8/icon = ExtResource("9_2pc1p")
+tab_8/disabled = true
+tab_9/tooltip = "Colyseus"
+tab_9/icon = ExtResource("11_ked6n")
+script = ExtResource("7_pnjyg")
+
+[node name="Menu" type="HBoxContainer" parent="LobbyControl/Top"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Panel" type="Panel" parent="LobbyControl/Top/Menu"]
+self_modulate = Color(1, 1, 1, 0.588235)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MainArea" type="VBoxContainer" parent="LobbyControl/Top/Menu/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -22.0
+offset_top = -21.5
+offset_right = 22.0
+offset_bottom = 21.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Name" type="RichTextLabel" parent="LobbyControl/Top/Menu/Panel/MainArea"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+bbcode_enabled = true
+text = "Name"
+fit_content = true
+scroll_active = false
+
+[node name="Host" type="Button" parent="LobbyControl/Top/Menu/Panel/MainArea"]
+layout_mode = 2
+text = "Host"
+script = ExtResource("8_ttryd")
+
+[node name="Join" type="Button" parent="LobbyControl/Top/Menu/Panel/MainArea"]
+layout_mode = 2
+text = "Join"
+script = ExtResource("9_f4ja4")
+
+[node name="Search" type="TextEdit" parent="LobbyControl/Top/Menu/Panel/MainArea"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+placeholder_text = "Name/ID Search"
+context_menu_enabled = false
+scroll_fit_content_height = true
+script = ExtResource("10_tyone")
+
+[node name="Join_data" type="TextEdit" parent="LobbyControl/Top/Menu/Panel/MainArea" groups=["Join_data"]]
+custom_minimum_size = Vector2(200, 35)
+layout_mode = 2
+drag_and_drop_selection_enabled = false
+scroll_past_end_of_file = true
+
+[node name="WindowControlArea" type="VBoxContainer" parent="LobbyControl/Top/Menu/Panel"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -75.0
+offset_top = -66.0
+offset_right = 75.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 2
+
+[node name="Hide" type="Button" parent="LobbyControl/Top/Menu/Panel/WindowControlArea"]
+layout_mode = 2
+text = "Hide"
+script = ExtResource("11_tsjd1")
+
+[node name="Separator" type="Panel" parent="LobbyControl/Top/Menu/Panel/WindowControlArea"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_l4wgv")
+
+[node name="Bot" type="Panel" parent="LobbyControl"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_l4wgv")
+
+[node name="TitleBar" type="Panel" parent="."]
+custom_minimum_size = Vector2(1500, 40)
+layout_mode = 2
+offset_left = 300.0
+offset_right = 1800.0
+offset_bottom = 40.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7v4l0")
+
+[node name="Name" type="Button" parent="TitleBar"]
+clip_contents = true
+custom_minimum_size = Vector2(1150, 40)
+layout_mode = 2
+offset_right = 1150.0
+offset_bottom = 40.0
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+tooltip_text = "UID
+IP:PORT
+OWNER"
+mouse_filter = 1
+text = "Server"
+flat = true
+
+[node name="Join code" type="Button" parent="TitleBar"]
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
+offset_left = 1150.0
+offset_right = 1350.0
+offset_bottom = 40.0
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+tooltip_text = "UID
+IP:PORT
+OWNER"
+mouse_filter = 1
+text = "Join code"
+flat = true
+
+[node name="Players" type="Button" parent="TitleBar"]
+custom_minimum_size = Vector2(70, 40)
+layout_mode = 2
+offset_left = 1350.0
+offset_right = 1425.0
+offset_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+tooltip_text = "LIST"
+mouse_filter = 1
+text = "Players"
+flat = true
+
+[node name="Latency" type="Button" parent="TitleBar"]
+custom_minimum_size = Vector2(75, 40)
+layout_mode = 2
+offset_left = 1425.0
+offset_right = 1500.0
+offset_bottom = 40.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+tooltip_text = "LIST"
+mouse_filter = 1
+text = "Latency"
+flat = true
+
+[node name="LobbyPanel" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(1450, 0)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1500.0
+offset_top = -955.0
+offset_bottom = -5.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Lobby" type="GridContainer" parent="LobbyPanel"]
+custom_minimum_size = Vector2(0, 900)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("12_emtdj")
+
+[node name="Update" type="Timer" parent="LobbyPanel"]
+autostart = true
+ignore_time_scale = true

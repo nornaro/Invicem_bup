@@ -1,0 +1,383 @@
+[gd_resource type="SpriteFrames" load_steps=88 format=3 uid="uid://cmxmhvu4jxo3a"]
+
+[ext_resource type="Texture2D" uid="uid://di4jf7g1lnsqd" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_000.png" id="1_e8fbe"]
+[ext_resource type="Texture2D" uid="uid://c4pxfnx4chm66" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_001.png" id="2_ml05d"]
+[ext_resource type="Texture2D" uid="uid://d3jhruj8xmh4f" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_002.png" id="3_5tvow"]
+[ext_resource type="Texture2D" uid="uid://db2v0p4751qex" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_003.png" id="4_w12tg"]
+[ext_resource type="Texture2D" uid="uid://eaurvt1l3w28" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_004.png" id="5_i26xe"]
+[ext_resource type="Texture2D" uid="uid://b1ah3y46eygxk" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_005.png" id="6_ogk4e"]
+[ext_resource type="Texture2D" uid="uid://cgvoj4wc2oimp" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_006.png" id="7_5p8bp"]
+[ext_resource type="Texture2D" uid="uid://c6hh8vid0bk7d" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_007.png" id="8_20p2x"]
+[ext_resource type="Texture2D" uid="uid://cqprfa4ia2agb" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_008.png" id="9_3supj"]
+[ext_resource type="Texture2D" uid="uid://dpbv1lp7piecc" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_009.png" id="10_bglg2"]
+[ext_resource type="Texture2D" uid="uid://doevm6ifckd3h" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_010.png" id="11_0ln0o"]
+[ext_resource type="Texture2D" uid="uid://bqfotx84rrepg" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_011.png" id="12_ny3hv"]
+[ext_resource type="Texture2D" uid="uid://bna5wobk5u0d2" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_012.png" id="13_oocn7"]
+[ext_resource type="Texture2D" uid="uid://rtme7unt8dc8" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_013.png" id="14_ax0f5"]
+[ext_resource type="Texture2D" uid="uid://djevk51fc5cgd" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_014.png" id="15_88bbc"]
+[ext_resource type="Texture2D" uid="uid://dvrtjn0iwlyrb" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_015.png" id="16_num7r"]
+[ext_resource type="Texture2D" uid="uid://k87lsa13unut" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_016.png" id="17_fdn14"]
+[ext_resource type="Texture2D" uid="uid://dcx2pvb24swl2" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Blinking/0_Zombie_Villager_Idle Blinking_017.png" id="18_10wmy"]
+[ext_resource type="Texture2D" uid="uid://cuec510mkckdw" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Dying/0_Zombie_Villager_Dying_000.png" id="19_num7r"]
+[ext_resource type="Texture2D" uid="uid://mt1wk2wysh1y" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Dying/0_Zombie_Villager_Dying_001.png" id="20_fdn14"]
+[ext_resource type="Texture2D" uid="uid://bvymf4btvw6ax" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Dying/0_Zombie_Villager_Dying_002.png" id="21_10wmy"]
+[ext_resource type="Texture2D" uid="uid://cwvhooy6qmneq" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Dying/0_Zombie_Villager_Dying_003.png" id="22_8a2uh"]
+[ext_resource type="Texture2D" uid="uid://ls4x8ryn83sf" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Dying/0_Zombie_Villager_Dying_004.png" id="23_oeu6y"]
+[ext_resource type="Texture2D" uid="uid://dso0opa8lhu6g" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Dying/0_Zombie_Villager_Dying_005.png" id="24_x457y"]
+[ext_resource type="Texture2D" uid="uid://d4gs4scbeu8u3" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Dying/0_Zombie_Villager_Dying_006.png" id="25_thip7"]
+[ext_resource type="Texture2D" uid="uid://do4ct0pnww3qk" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Dying/0_Zombie_Villager_Dying_007.png" id="26_xqyd7"]
+[ext_resource type="Texture2D" uid="uid://bpoxudftj5loq" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Dying/0_Zombie_Villager_Dying_008.png" id="27_1guwt"]
+[ext_resource type="Texture2D" uid="uid://b3rnccixsx3kx" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Dying/0_Zombie_Villager_Dying_009.png" id="28_x8e48"]
+[ext_resource type="Texture2D" uid="uid://bni1d1f2w75wo" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Dying/0_Zombie_Villager_Dying_010.png" id="29_7bymm"]
+[ext_resource type="Texture2D" uid="uid://domwxeccouc1y" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Dying/0_Zombie_Villager_Dying_011.png" id="30_cerpl"]
+[ext_resource type="Texture2D" uid="uid://8gje34v8fcwu" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Dying/0_Zombie_Villager_Dying_012.png" id="31_5ai5t"]
+[ext_resource type="Texture2D" uid="uid://bkoetsmm3kiy7" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Dying/0_Zombie_Villager_Dying_013.png" id="32_daqhi"]
+[ext_resource type="Texture2D" uid="uid://dxat6ck4yh4g8" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Dying/0_Zombie_Villager_Dying_014.png" id="33_1fpd7"]
+[ext_resource type="Texture2D" uid="uid://c6rotds4tpgpu" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Hurt/0_Zombie_Villager_Hurt_000.png" id="34_5ai5t"]
+[ext_resource type="Texture2D" uid="uid://ckrwvpoo6its2" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Hurt/0_Zombie_Villager_Hurt_001.png" id="35_daqhi"]
+[ext_resource type="Texture2D" uid="uid://bytnay02g2ynw" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Hurt/0_Zombie_Villager_Hurt_002.png" id="36_1fpd7"]
+[ext_resource type="Texture2D" uid="uid://3x6l2yvba4cq" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Hurt/0_Zombie_Villager_Hurt_003.png" id="37_3lu28"]
+[ext_resource type="Texture2D" uid="uid://bfa3n2ktudfyu" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Hurt/0_Zombie_Villager_Hurt_004.png" id="38_836ap"]
+[ext_resource type="Texture2D" uid="uid://chfsmogmqd2db" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Hurt/0_Zombie_Villager_Hurt_005.png" id="39_77w1e"]
+[ext_resource type="Texture2D" uid="uid://dpdnvfap1m4b7" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Hurt/0_Zombie_Villager_Hurt_006.png" id="40_ofydw"]
+[ext_resource type="Texture2D" uid="uid://dkwbp3u3gqhxt" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Hurt/0_Zombie_Villager_Hurt_007.png" id="41_tqtkv"]
+[ext_resource type="Texture2D" uid="uid://bg373n30482ch" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Hurt/0_Zombie_Villager_Hurt_008.png" id="42_ybttt"]
+[ext_resource type="Texture2D" uid="uid://dyck1ougswydm" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Hurt/0_Zombie_Villager_Hurt_009.png" id="43_e2kfu"]
+[ext_resource type="Texture2D" uid="uid://btu54026e2ttb" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Hurt/0_Zombie_Villager_Hurt_010.png" id="44_7iy4t"]
+[ext_resource type="Texture2D" uid="uid://bjt0lc5lsoux5" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Hurt/0_Zombie_Villager_Hurt_011.png" id="45_k088d"]
+[ext_resource type="Texture2D" uid="uid://di51bnl8686up" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_000.png" id="46_u8vef"]
+[ext_resource type="Texture2D" uid="uid://dl0hcaomycs7p" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_001.png" id="47_qgjm7"]
+[ext_resource type="Texture2D" uid="uid://b37h2e2esslsw" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_002.png" id="48_uq6al"]
+[ext_resource type="Texture2D" uid="uid://55eg5gn2tb6a" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_003.png" id="49_dn4o0"]
+[ext_resource type="Texture2D" uid="uid://bkurhe7lt4w8l" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_004.png" id="50_vrup7"]
+[ext_resource type="Texture2D" uid="uid://bwpe3wtwslxah" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_005.png" id="51_15h40"]
+[ext_resource type="Texture2D" uid="uid://d3mm7wwtii6mg" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_006.png" id="52_t7fhu"]
+[ext_resource type="Texture2D" uid="uid://dbcb784l3nv35" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_007.png" id="53_a6ev0"]
+[ext_resource type="Texture2D" uid="uid://c0xe181ikqw53" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_008.png" id="54_g086w"]
+[ext_resource type="Texture2D" uid="uid://dkf6v2lnq26jr" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_009.png" id="55_wuaor"]
+[ext_resource type="Texture2D" uid="uid://b8d73egfhawtg" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_010.png" id="56_5ofe1"]
+[ext_resource type="Texture2D" uid="uid://b1qts26mco8hd" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_011.png" id="57_3sj7a"]
+[ext_resource type="Texture2D" uid="uid://bns74rjuow1or" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_012.png" id="58_1arus"]
+[ext_resource type="Texture2D" uid="uid://nl8i7eow2uvn" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_013.png" id="59_g81to"]
+[ext_resource type="Texture2D" uid="uid://cliidntm2n3bl" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_014.png" id="60_oho0b"]
+[ext_resource type="Texture2D" uid="uid://ccuhcc777pqi1" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_015.png" id="61_b8a7v"]
+[ext_resource type="Texture2D" uid="uid://7s344nld0y12" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_016.png" id="62_hrimm"]
+[ext_resource type="Texture2D" uid="uid://cslrbl48dksdf" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Idle/0_Zombie_Villager_Idle_017.png" id="63_v2kbn"]
+[ext_resource type="Texture2D" uid="uid://cuv2cmfngl6g8" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_000.png" id="64_1ws4w"]
+[ext_resource type="Texture2D" uid="uid://c4ittasx5lxf4" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_001.png" id="65_ssnvg"]
+[ext_resource type="Texture2D" uid="uid://c3f48js2g2tni" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_002.png" id="66_u3wwc"]
+[ext_resource type="Texture2D" uid="uid://djideewfyxoji" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_003.png" id="67_5ykme"]
+[ext_resource type="Texture2D" uid="uid://j2c0v5ljxmf2" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_004.png" id="68_pvj1s"]
+[ext_resource type="Texture2D" uid="uid://drl6t3k4103t5" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_005.png" id="69_x0qvf"]
+[ext_resource type="Texture2D" uid="uid://b4r50sekc4d4x" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_006.png" id="70_jle0u"]
+[ext_resource type="Texture2D" uid="uid://k753nl74k2d" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_007.png" id="71_auwbk"]
+[ext_resource type="Texture2D" uid="uid://dcdi3j3a8dvdx" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_008.png" id="72_efemm"]
+[ext_resource type="Texture2D" uid="uid://pt534lvtexww" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_009.png" id="73_1i16w"]
+[ext_resource type="Texture2D" uid="uid://enbg5gh2pnu7" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_010.png" id="74_1jmqn"]
+[ext_resource type="Texture2D" uid="uid://du2athkprud3c" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_011.png" id="75_8cedh"]
+[ext_resource type="Texture2D" uid="uid://cv7phs0uebre5" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_012.png" id="76_t1jv4"]
+[ext_resource type="Texture2D" uid="uid://b0fehhqvhei2y" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_013.png" id="77_allqh"]
+[ext_resource type="Texture2D" uid="uid://dlvb7joq0vjb2" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_014.png" id="78_okmgj"]
+[ext_resource type="Texture2D" uid="uid://bl62yj7ctuu86" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_015.png" id="79_ef7ga"]
+[ext_resource type="Texture2D" uid="uid://cbbnu1rbuhev3" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_016.png" id="80_trth7"]
+[ext_resource type="Texture2D" uid="uid://c8mpiu2cw5sx1" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_017.png" id="81_tmt0d"]
+[ext_resource type="Texture2D" uid="uid://c45invy3r84lf" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_018.png" id="82_oj8w7"]
+[ext_resource type="Texture2D" uid="uid://bfxsmdm432p0w" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_019.png" id="83_ggxom"]
+[ext_resource type="Texture2D" uid="uid://btmrod4j6owme" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_020.png" id="84_crben"]
+[ext_resource type="Texture2D" uid="uid://d07hkp2w5c63b" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_021.png" id="85_i6cqg"]
+[ext_resource type="Texture2D" uid="uid://fl0fvu5nwgfj" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_022.png" id="86_p1p6o"]
+[ext_resource type="Texture2D" uid="uid://lxwu2w5fai8u" path="res://Scenes/Minions/Chibi/Zombie_1/PNG Sequences/Walking/0_Zombie_Villager_Walking_023.png" id="87_qvuyd"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_e8fbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ml05d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5tvow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_w12tg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_i26xe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ogk4e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5p8bp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_20p2x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3supj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bglg2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_0ln0o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ny3hv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_oocn7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ax0f5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_88bbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_num7r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_fdn14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_10wmy")
+}],
+"loop": true,
+"name": &"Blinking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_num7r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_fdn14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_10wmy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_8a2uh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_oeu6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_x457y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_thip7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_xqyd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_1guwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_x8e48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_7bymm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_cerpl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_5ai5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_daqhi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_1fpd7")
+}],
+"loop": true,
+"name": &"Dying",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_5ai5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_daqhi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_1fpd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_3lu28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_836ap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_77w1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_ofydw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_tqtkv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_ybttt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_e2kfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_7iy4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_k088d")
+}],
+"loop": true,
+"name": &"Hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("46_u8vef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_qgjm7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_uq6al")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_dn4o0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_vrup7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_15h40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_t7fhu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_a6ev0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_g086w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_wuaor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_5ofe1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_3sj7a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_1arus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_g81to")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_oho0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_b8a7v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_hrimm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_v2kbn")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("64_1ws4w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_ssnvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_u3wwc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_5ykme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_pvj1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_x0qvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_jle0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_auwbk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_efemm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_1i16w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_1jmqn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_8cedh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_t1jv4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_allqh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_okmgj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_ef7ga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_trth7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_tmt0d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_oj8w7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_ggxom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_crben")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_i6cqg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_p1p6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_qvuyd")
+}],
+"loop": true,
+"name": &"Walking",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

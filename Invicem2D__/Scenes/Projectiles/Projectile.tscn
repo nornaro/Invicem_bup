@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://bt4ojth5m2alx"]
+
+[ext_resource type="Texture2D" uid="uid://cgw5mcxq1ouwv" path="res://Scenes/Projectiles/Projectile/fireball.png" id="1_qupxw"]
+[ext_resource type="Script" uid="uid://budsptj6g8gdr" path="res://Scenes/Projectiles/projectile.gd" id="2_vku8s"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_76vf1"]
+particles_animation = true
+particles_anim_h_frames = 6
+particles_anim_v_frames = 1
+particles_anim_loop = true
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_cxq0p"]
+particle_flag_disable_z = true
+angle_min = -45.0
+angle_max = -45.0
+inherit_velocity_ratio = 10.0
+spread = 10.0
+initial_velocity_min = 100.0
+initial_velocity_max = 100.0
+gravity = Vector3(0, 0, 0)
+scale_min = 0.1
+scale_max = 0.1
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.0
+
+[node name="ProjTest" type="GPUParticles2D" groups=["projectile"]]
+material = SubResource("CanvasItemMaterial_76vf1")
+rotation = 0.785398
+amount = 1
+texture = ExtResource("1_qupxw")
+process_material = SubResource("ParticleProcessMaterial_cxq0p")
+script = ExtResource("2_vku8s")

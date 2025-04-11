@@ -1,0 +1,139 @@
+[gd_scene load_steps=13 format=3 uid="uid://cc0ydwynog0pq"]
+
+[ext_resource type="Script" path="res://FantasyManager/scenes/Player/panel.gd" id="1_o4ilx"]
+[ext_resource type="Script" path="res://FantasyManager/scenes/UI/turn_counter.gd" id="2_734ay"]
+[ext_resource type="Script" path="res://FantasyManager/scenes/Player/h_flow_container.gd" id="2_nr1on"]
+[ext_resource type="PackedScene" uid="uid://c871hv5oa1f3w" path="res://FantasyManager/scenes/Player/Buildings/economy.tscn" id="3_i8ne2"]
+[ext_resource type="PackedScene" uid="uid://ckwcaiv0cqv64" path="res://FantasyManager/scenes/Player/Buildings/military.tscn" id="4_2um6k"]
+[ext_resource type="PackedScene" uid="uid://2sf4maq1c76p" path="res://FantasyManager/scenes/Player/Buildings/Lumbermill/lumbermill_view.tscn" id="5_e4su5"]
+[ext_resource type="Script" path="res://FantasyManager/scenes/Player/Buildings/buildings.gd" id="5_nlmxy"]
+[ext_resource type="PackedScene" uid="uid://dmiuwiow3uh7a" path="res://FantasyManager/scenes/Player/Buildings/Windmill/windmill_view.tscn" id="6_jigc8"]
+[ext_resource type="PackedScene" uid="uid://bpfad467iajuq" path="res://FantasyManager/scenes/Player/Buildings/Watermill/watermill_view.tscn" id="7_t4b3h"]
+[ext_resource type="Script" path="res://FantasyManager/scenes/UI/end_turn.gd" id="8_e70ot"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ue0ff"]
+size = Vector3(100, 10, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sltia"]
+albedo_color = Color(0.180392, 0.180392, 0.180392, 1)
+
+[node name="MenuBar" type="VBoxContainer"]
+show_behind_parent = true
+top_level = true
+clip_children = 1
+custom_minimum_size = Vector2(500, 70)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -555.0
+offset_top = -98.0
+offset_right = 555.0
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+mouse_force_pass_scroll_events = false
+script = ExtResource("1_o4ilx")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 8
+alignment = 2
+
+[node name="Turn" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Turn: "
+
+[node name="TurnCounter" type="Label" parent="HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1
+script = ExtResource("2_734ay")
+
+[node name="PositionReset" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+tooltip_text = "Insert"
+text = "H"
+
+[node name="RotationReset" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+tooltip_text = "Delete"
+text = "R"
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+z_as_relative = false
+layout_mode = 2
+
+[node name="BuildMenu" type="HFlowContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+alignment = 1
+last_wrap_alignment = 1
+script = ExtResource("2_nr1on")
+
+[node name="Panel2" type="Panel" parent="VBoxContainer/BuildMenu"]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Panel3" type="Panel" parent="VBoxContainer/BuildMenu"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Economy" parent="VBoxContainer/BuildMenu" groups=["Buildings", "RollableMenu"] instance=ExtResource("3_i8ne2")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+script = ExtResource("5_nlmxy")
+
+[node name="Military" parent="VBoxContainer/BuildMenu" groups=["Buildings", "RollableMenu"] instance=ExtResource("4_2um6k")]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("5_nlmxy")
+
+[node name="Panel" type="Panel" parent="VBoxContainer/BuildMenu"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="EndTurn" type="Button" parent="VBoxContainer/BuildMenu"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+toggle_mode = true
+text = "End Turn"
+script = ExtResource("8_e70ot")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, -1.91524)
+mesh = SubResource("BoxMesh_ue0ff")
+skeleton = NodePath("../Buildings")
+surface_material_override/0 = SubResource("StandardMaterial3D_sltia")
+
+[node name="Buildings" type="Node3D" parent="."]
+
+[node name="Lumbermill" parent="Buildings" instance=ExtResource("5_e4su5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -5, 0)
+
+[node name="Windmill" parent="Buildings" instance=ExtResource("6_jigc8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -5, 0)
+
+[node name="Watermill" parent="Buildings" instance=ExtResource("7_t4b3h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -5, 0)
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="HBoxContainer/PositionReset" to="." method="_on_position_reset_pressed"]
+[connection signal="pressed" from="HBoxContainer/RotationReset" to="." method="_on_rotation_reset_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer" to="VBoxContainer" method="_on_mouse_entered"]
+[connection signal="toggled" from="VBoxContainer/BuildMenu/EndTurn" to="VBoxContainer/BuildMenu/EndTurn" method="_on_toggled"]
